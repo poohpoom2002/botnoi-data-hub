@@ -1,0 +1,10 @@
+[deprecation]
+showfileUploaderEncoding = false
+[theme] 
+base="light"
+primaryColor = "#CE5A67"  
+backgroundColor = "#FCF5ED" 
+secondaryBackgroundColor = "#F4BF96" 
+textColor = "#1F1717" 
+font = "sans serif" 
+
