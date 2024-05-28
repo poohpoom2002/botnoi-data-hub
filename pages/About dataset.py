@@ -81,8 +81,34 @@ selectbox_style = """
 """
 st.markdown(selectbox_style, unsafe_allow_html=True)
 
-if selected == "Dashboard and prompt":
-    st.title("Dashboard and prompt")
-elif selected == "About Dataset":
-    st.title("About Dataset")
+# if selected == "Dashboard and prompt":
+#     st.title("Dashboard and prompt")
+# elif selected == "About Dataset":
+#     st.title("About Dataset")
 
+page_style = """
+    <style>
+    [data-testid="stSidebar"]={
+        background-color = white;
+    }
+    .Top_title{
+        font-size: 50px !important;
+        font-weight: thin;
+        color: black;
+        padding: -100px;
+    }
+    </style>
+"""
+
+st.markdown(page_style, unsafe_allow_html=True)
+st.markdown("<h1 class='Top_title'>Get to know about Dataset </h1>", unsafe_allow_html=True)
+st.write("The data used in the program comes exclusively from the prod-tts-payment database. You can read the variables within the table and find their definitions below.")
+
+
+st.markdown("<h5 style='font-weight: bold;'>Payment</h5>",unsafe_allow_html=True)
+
+
+st.markdown("<h5 style='font-weight: bold;'>Personal form</h5>",unsafe_allow_html=True)
+
+
+st.markdown("<h5 style='font-weight: bold;'>Message</h5>",unsafe_allow_html=True)

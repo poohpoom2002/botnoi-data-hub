@@ -43,9 +43,7 @@ sidebar_style = """
 """
 
 st.markdown(sidebar_style, unsafe_allow_html=True)
-
 st.sidebar.markdown("<h1 class='sidebar_title'>Botnoi <br> Data Hub</h1>", unsafe_allow_html=True)
-
 st.sidebar.markdown("<h5 class='lower_title'>Website to help you analyze data from Botnoi Voice with ease and convenience. We have successfully connected to the database!</h5>", unsafe_allow_html=True)
 
 selected = st.sidebar.selectbox(
@@ -78,7 +76,54 @@ selectbox_style = """
 """
 st.markdown(selectbox_style, unsafe_allow_html=True)
 
-if selected == "Dashboard and prompt":
-    st.title("Dashboard and prompt")
-elif selected == "About Dataset":
-    st.title("About Dataset")
+# if selected == "Dashboard and prompt":
+#     # st.title("Dashboard and prompt")
+# elif selected == "About Dataset":
+#     # st.title("About Dataset")
+
+page_style = """
+    <style>
+    [data-testid="stSidebar"]={
+        background-color = white;
+    }
+    .Top_title{
+        font-size: 50px !important;
+        font-weight: thin;
+        color: black;
+        padding: -100px;
+    }
+    </style>
+"""
+
+st.markdown(page_style, unsafe_allow_html=True)
+st.markdown("<h1 class='Top_title'>Botnoi Voice Dashboard</h1>", unsafe_allow_html=True)
+st.write("This dashboard showcases key data on Botnoi Voice, including revenue trends and voice download statistics, providing a clear view of financial performance and user engagement.")
+
+
+# dashboard
+
+
+
+
+st.subheader("Our most recent top 10 highest paying customers")
+
+
+# 10 highest paying customers
+
+st.subheader("Dashboard showing customer behavior")
+
+
+
+# customer behavior
+
+
+
+st.markdown("<h1 class='Top_title'>Let’s explore Insights with PandasAI</h1>", unsafe_allow_html=True)
+st.write("PandasAI is an advanced tool that integrates artificial intelligence capabilities with the Pandas library, enabling users to analyze data more efficiently. Users can prompt in natural language to analyze data directly !")
+st.markdown("<h5 style='font-weight: bold;'>Enter your prompt</h5>",unsafe_allow_html=True)
+
+
+
+
+st.markdown("<h5 style='font-weight: bold;'>Result</h5>",unsafe_allow_html=True)
+
