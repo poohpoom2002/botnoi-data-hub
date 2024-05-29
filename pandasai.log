@@ -3034,3 +3034,218 @@ result = {'type': 'plot', 'value': '/Users/poohpoom2002/Downloads/streamlit/expo
 2024-05-21 16:04:39 [INFO] Executing Step 7: ResultValidation
 2024-05-21 16:04:39 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Downloads/streamlit/exports/charts/temp_chart.png'}
 2024-05-21 16:04:39 [INFO] Executing Step 8: ResultParsing
+2024-05-24 12:45:16 [INFO] Question: make me line graph
+2024-05-24 12:45:16 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-24 12:45:16 [INFO] Prompt ID: aaeae452-63a6-457e-8fcf-1801784c5ef4
+2024-05-24 12:45:16 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-24 12:45:18 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-24 12:45:18 [INFO] Executing Step 1: CacheLookup
+2024-05-24 12:45:18 [INFO] Executing Step 2: PromptGeneration
+2024-05-24 12:45:23 [INFO] Using prompt: <dataframe>
+dfs[0]:545721x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+636f9273c655eeca2ba7f2e1,Uf30c985dde29904e4e42599eddc2074b,pack_1299,52,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211261958165303764540115802TH5909LUGENTPAY621207084300012563046287,01075360003740400000220300124343000125230307013333,2022-11-11 04:16:56,TTS-9N1AOW4CUN4MDHHZ,nan,7363,nan,2023-03-26 07:30:05.740,toon128,Unlimited,subscription,nan,nan
+636a944123944cd1df7c495d,PoHUZCdTqNQ0iU3gzV9mfN7CjKE2,pack_599,79,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252210081441175303764540135802TH5909LUGENTPAY62120708430001256304EEB1,01075360003740400000220300124343000125221112201516,2022-11-12 13:58:43,TTS-1F15IGFJQVLA7607,False,4241,75000,2022-08-14 02:02:53.905,2712,Basic,add_on,Advanced,8
+631d4749c3718418d1a3c82f,lshcfEtJsoU2Cjre6An4dsd9kIl1,package_100,129,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211141559025303764540115802TH5909LUGENTPAY621207084300012563047434,01075360003740400000220300124343000125221115140230,2024-03-24 21:44:47,TTS-RVS65GX36K12MRM8,True,802,110.00000000000001,2023-09-11 16:52:34.904,20bot,nan,nan,NoAds,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ make me line graph
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-24 12:45:23 [INFO] Executing Step 3: CodeGenerator
+2024-05-24 12:45:31 [INFO] Prompt used:
+            None
+            
+2024-05-24 12:45:31 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Dataframe
+data = {
+    '_id': ['636f9273c655eeca2ba7f2e1', '631d4749c3718418d1a3c82f', '636a944123944cd1df7c495d'],
+    'user_id': ['Uf30c985dde29904e4e42599eddc2074b', 'lshcfEtJsoU2Cjre6An4dsd9kIl1', 'PoHUZCdTqNQ0iU3gzV9mfN7CjKE2'],
+    'package_id': ['pack_1299', 'package_100', 'pack_599'],
+    'price': [52, 129, 79],
+    'datetime': ['2022-11-11 04:16:56', '2024-03-24 21:44:47', '2022-11-12 13:58:43']
+}
+
+dfs = [pd.DataFrame(data)]
+
+# Line graph
+plt.figure(figsize=(10, 6))
+for df in dfs:
+    plt.plot(df['datetime'], df['price'], marker='o', label='Price')
+plt.xlabel('Date')
+plt.ylabel('Price')
+plt.title('Price Variation Over Time')
+plt.legend()
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('line_graph.png')
+
+# Declare result variable
+result = {"type": "plot", "value": "line_graph.png"}
+            ```
+            
+2024-05-24 12:45:31 [INFO] Executing Step 4: CachePopulation
+2024-05-24 12:45:31 [INFO] Executing Step 5: CodeCleaning
+2024-05-24 12:45:31 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-24 12:45:31 [INFO] 
+Code running:
+```
+data = {'_id': ['636f9273c655eeca2ba7f2e1', '631d4749c3718418d1a3c82f', '636a944123944cd1df7c495d'], 'user_id': ['Uf30c985dde29904e4e42599eddc2074b', 'lshcfEtJsoU2Cjre6An4dsd9kIl1', 'PoHUZCdTqNQ0iU3gzV9mfN7CjKE2'], 'package_id': ['pack_1299', 'package_100', 'pack_599'], 'price': [52, 129, 79], 'datetime': ['2022-11-11 04:16:56', '2024-03-24 21:44:47', '2022-11-12 13:58:43']}
+plt.figure(figsize=(10, 6))
+for df in dfs:
+    plt.plot(df['datetime'], df['price'], marker='o', label='Price')
+plt.xlabel('Date')
+plt.ylabel('Price')
+plt.title('Price Variation Over Time')
+plt.legend()
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-24 12:45:31 [INFO] Executing Step 6: CodeExecution
+2024-05-24 12:45:48 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-24 12:45:49 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-24 12:46:03 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-24 12:46:03 [INFO] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-24 13:09:19 [INFO] Question: Give me a chart for percentage of each type of package_id.
+2024-05-24 13:09:19 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-24 13:09:19 [INFO] Prompt ID: 68ecc12b-585f-4dab-989e-9162feb438c2
+2024-05-24 13:09:19 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-24 13:09:21 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-24 13:09:21 [INFO] Executing Step 1: CacheLookup
+2024-05-24 13:09:21 [INFO] Executing Step 2: PromptGeneration
+2024-05-24 13:09:25 [INFO] Using prompt: <dataframe>
+dfs[0]:545721x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+64094724b9db1961ba831b7d,Uf39f35ef259f8c499b6268cb3f622429,pack_599,499,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211150741205303764540115802TH5909LUGENTPAY6212070843000125630480D9,01075360003740400000220300124343000125220406153822,2023-06-21 10:05:22,TTS-CB0FTF426EXSF44B,False,28200,2000,2022-11-08 13:13:04.408,12345,Advanced,subscription,Compensate_basic,2
+63edef783028b84f24f677b2,Wjfks8WwT5MiYBJV77lt5kiRqiB2,pack_2499,176,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211130343265303764540115802TH5909LUGENTPAY62120708430001256304F73D,01075360003740400000220300124343000125221108174712,2022-09-14 11:26:57,TTS-YZAJF38RJDP1THUI,True,645,250,2022-11-17 15:56:42.012,marckitt,nan,nan,nan,8
+63e1d6e9bbe59cc12c14e388,Uc8n27g62161767era647j1t6vc822m5v,pack_179,280,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522060520372853037645402135802TH5909LUGENTPAY62120708430001256304CC0E,01075360003740400000220300124343000125220703124216,2022-12-21 12:54:06,TTS-MHYUTP9O0WKMO7YK,nan,110000,242000.00000000003,2021-11-22 12:37:42.910,550,Unlimited,add_on,Pro,nan
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Give me a chart for percentage of each type of package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-24 13:09:25 [INFO] Executing Step 3: CodeGenerator
+2024-05-24 13:09:34 [INFO] Prompt used:
+            None
+            
+2024-05-24 13:09:34 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Update code to read data into a DataFrame
+data = {'_id': ['64094724b9db1961ba831b7d', '63edef783028b84f24f677b2', '63e1d6e9bbe59cc12c14e388'],
+        'user_id': ['Uf39f35ef259f8c499b6268cb3f622429', 'Wjfks8WwT5MiYBJV77lt5kiRqiB2', 'Uc8n27g62161767era647j1t6vc822m5v'],
+        'package_id': ['pack_599', 'pack_2499', 'pack_179'],
+        'price': [499, 176, 280]}
+dfs = [pd.DataFrame(data)]
+
+# Calculate percentage of each type of package_id
+package_counts = dfs[0]['package_id'].value_counts(normalize=True) * 100
+
+# Create a bar chart for percentage of each type of package_id
+plt.figure(figsize=(10, 6))
+package_counts.plot(kind='bar', color='skyblue')
+plt.xlabel('Package ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Package ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('package_id_percentage_chart.png')
+
+# Declare result dictionary with the plot filename
+result = {"type": "plot", "value": "package_id_percentage_chart.png"}
+            ```
+            
+2024-05-24 13:09:34 [INFO] Executing Step 4: CachePopulation
+2024-05-24 13:09:34 [INFO] Executing Step 5: CodeCleaning
+2024-05-24 13:09:34 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/pages/exports/charts/temp_chart.png
+2024-05-24 13:09:34 [INFO] 
+Code running:
+```
+data = {'_id': ['64094724b9db1961ba831b7d', '63edef783028b84f24f677b2', '63e1d6e9bbe59cc12c14e388'], 'user_id': ['Uf39f35ef259f8c499b6268cb3f622429', 'Wjfks8WwT5MiYBJV77lt5kiRqiB2', 'Uc8n27g62161767era647j1t6vc822m5v'], 'package_id': ['pack_599', 'pack_2499', 'pack_179'], 'price': [499, 176, 280]}
+package_counts = dfs[0]['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+package_counts.plot(kind='bar', color='skyblue')
+plt.xlabel('Package ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Package ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/pages/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/pages/exports/charts/temp_chart.png'}
+        ```
+2024-05-24 13:09:34 [INFO] Executing Step 6: CodeExecution
+2024-05-24 13:09:34 [INFO] Executing Step 7: ResultValidation
+2024-05-24 13:09:34 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/pages/exports/charts/temp_chart.png'}
+2024-05-24 13:09:34 [INFO] Executing Step 8: ResultParsing
