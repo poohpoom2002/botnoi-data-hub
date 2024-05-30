@@ -3249,3 +3249,2705 @@ result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hu
 2024-05-24 13:09:34 [INFO] Executing Step 7: ResultValidation
 2024-05-24 13:09:34 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/pages/exports/charts/temp_chart.png'}
 2024-05-24 13:09:34 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:19:54 [INFO] Question: Give me percentage of the package_id type.
+2024-05-29 16:19:54 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:19:54 [INFO] Prompt ID: 4073c349-9d16-4ac8-ab5a-f82543f24722
+2024-05-29 16:19:54 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:19:56 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:19:56 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:19:56 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:20:00 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Give me percentage of the package_id type.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:20:00 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:20:03 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:20:03 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+
+result = {
+    "type": "string",
+    "value": package_id_percentage
+}
+            ```
+            
+2024-05-29 16:20:03 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:20:03 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:20:03 [INFO] 
+Code running:
+```
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'string', 'value': package_id_percentage}
+        ```
+2024-05-29 16:20:03 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:20:04 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'pandas.core.series.Series'> must match with type string
+
+2024-05-29 16:20:04 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-29 16:20:04 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-29 16:20:04 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-29 16:20:04 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give me percentage of the package_id type.
+
+You generated this python code:
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'string', 'value': package_id_percentage}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'pandas.core.series.Series'> must match with type string
+
+
+Fix the python code above and return the new python code:
+2024-05-29 16:20:04 [INFO] Executing Step 1: CodeGenerator
+2024-05-29 16:20:06 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:20:06 [INFO] Code generated:
+            ```
+            package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+            ```
+            
+2024-05-29 16:20:06 [INFO] Executing Step 2: CodeCleaning
+2024-05-29 16:20:06 [INFO] 
+Code running:
+```
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+        ```
+2024-05-29 16:20:06 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 98, in execute
+    f'Value type {type(result["value"])} must match with type {result["type"]}'
+KeyError: 'value'
+
+2024-05-29 16:20:06 [WARNING] Failed to execute code retrying with a correction framework [retry number: 2]
+2024-05-29 16:20:06 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-29 16:20:06 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-29 16:20:06 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give me percentage of the package_id type.
+
+You generated this python code:
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 98, in execute
+    f'Value type {type(result["value"])} must match with type {result["type"]}'
+KeyError: 'value'
+
+
+Fix the python code above and return the new python code:
+2024-05-29 16:20:06 [INFO] Executing Step 1: CodeGenerator
+2024-05-29 16:20:09 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:20:09 [INFO] Code generated:
+            ```
+            package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+            ```
+            
+2024-05-29 16:20:09 [INFO] Executing Step 2: CodeCleaning
+2024-05-29 16:20:09 [INFO] 
+Code running:
+```
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+        ```
+2024-05-29 16:20:09 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 98, in execute
+    f'Value type {type(result["value"])} must match with type {result["type"]}'
+KeyError: 'value'
+
+2024-05-29 16:20:09 [WARNING] Failed to execute code retrying with a correction framework [retry number: 3]
+2024-05-29 16:20:09 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-29 16:20:09 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-29 16:20:09 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give me percentage of the package_id type.
+
+You generated this python code:
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 98, in execute
+    f'Value type {type(result["value"])} must match with type {result["type"]}'
+KeyError: 'value'
+
+
+Fix the python code above and return the new python code:
+2024-05-29 16:20:09 [INFO] Executing Step 1: CodeGenerator
+2024-05-29 16:20:12 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:20:12 [INFO] Code generated:
+            ```
+            package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+result
+            ```
+            
+2024-05-29 16:20:12 [INFO] Executing Step 2: CodeCleaning
+2024-05-29 16:20:12 [INFO] 
+Code running:
+```
+package_id_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'table', 'data': package_id_percentage.to_dict()}
+result
+        ```
+2024-05-29 16:20:12 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 98, in execute
+    f'Value type {type(result["value"])} must match with type {result["type"]}'
+KeyError: 'value'
+
+2024-05-29 16:20:12 [ERROR] Pipeline failed on step 6: 'value'
+2024-05-29 16:21:19 [INFO] Question: Give me percentage for each type of the package_id.
+2024-05-29 16:21:19 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:21:19 [INFO] Prompt ID: 207ce50e-26bb-4b65-b07c-bb1dbdebba4a
+2024-05-29 16:21:19 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:21:19 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:21:19 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:21:19 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:21:23 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Give me percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:21:23 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:21:26 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:21:26 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+package_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+
+# Declare result var
+result = { "type": "dataframe", "value": package_percentage }
+            ```
+            
+2024-05-29 16:21:26 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:21:26 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:21:26 [INFO] 
+Code running:
+```
+package_percentage = dfs[0]['package_id'].value_counts(normalize=True) * 100
+result = {'type': 'dataframe', 'value': package_percentage}
+        ```
+2024-05-29 16:21:26 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:21:26 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:21:26 [INFO] Answer: {'type': 'dataframe', 'value':                   package_id
+credits            88.128881
+package_100         3.554324
+package_50          3.056162
+credit              1.604700
+pack_299            0.629064
+pack_99             0.585125
+package_200         0.519216
+Mini                0.376963
+Basic               0.368175
+mini                0.335953
+package_400         0.136395
+pack_750            0.122298
+Advanced            0.069937
+NoAds               0.058952
+package_800         0.047235
+pack_499            0.045404
+package_500         0.040095
+nan                 0.036250
+pack_599            0.031490
+6                   0.027828
+package_6400        0.026730
+package_300         0.025814
+pack_600            0.025631
+package_1600        0.020871
+1                   0.018308
+pack_2000           0.016294
+3                   0.016111
+pack_1299           0.011534
+pack_179            0.010802
+Pro                 0.010069
+package_3200        0.009337
+package_1000        0.008422
+pack_1699           0.006957
+Unlimited           0.003295
+pack_5000           0.002380
+pack_1099           0.002380
+150                 0.002014
+Free                0.001465
+pack_2499           0.001465
+pack_10000          0.001465
+Compensate_basic    0.001282
+Pro plus            0.000915
+pack_20000          0.000549
+pack_2500           0.000366
+pack_13500          0.000183
+                    0.000183
+4                   0.000183
+6400                0.000183
+5                   0.000183
+600                 0.000183}
+2024-05-29 16:21:26 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:22:22 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:22:22 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:22:22 [INFO] Prompt ID: 9182c96b-cbc5-4b61-9fc9-6cfe20d8de6f
+2024-05-29 16:22:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:22:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:22:22 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:22:22 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:22:26 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:22:26 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:22:31 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:22:31 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Get the count of each type of package_id
+package_counts = dfs[0]['package_id'].value_counts()
+
+# Calculate the percentage for each type
+percentage = (package_counts / package_counts.sum()) * 100
+
+# Plotting the percentage for each type
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as png
+plt.savefig('package_id_percentage.png')
+
+# Declare result variable
+result = {
+    "type": "plot",
+    "value": "package_id_percentage.png"
+}
+            ```
+            
+2024-05-29 16:22:31 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:22:31 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:22:31 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:22:31 [INFO] 
+Code running:
+```
+package_counts = dfs[0]['package_id'].value_counts()
+percentage = package_counts / package_counts.sum() * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:22:31 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:22:32 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:22:32 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:22:32 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:22:53 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:22:53 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:22:53 [INFO] Prompt ID: 42e92f6c-15e5-4df4-9e90-d12fe984a427
+2024-05-29 16:22:53 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:22:53 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:22:53 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:22:53 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:22:58 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:22:58 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:23:04 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:23:04 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create a dataframe to store the data
+data = {
+    '_id': ['63709e9f61874c26ba6c3bc8', '63960330c818b8a1038736d1', '65094f29911a102774367695'],
+    'user_id': ['Ur2p2h3n84l78007735h838ge7vv3x8u3', '41jNuTEvcwXxv1Kte6vUXmsaHIh2', 'IARM0iz3GHduft1CFWUI79QvARy1'],
+    'package_id': ['credit', 'pack_179', 'package_3200'],
+    'price': [210, 34, 609]
+}
+
+df = pd.DataFrame(data)
+
+# Calculate percentage for each type of package_id
+package_counts = df['package_id'].value_counts()
+total_packages = len(df)
+percentage_per_package = (package_counts / total_packages) * 100
+
+# Plotting the percentages
+plt.figure(figsize=(10, 6))
+plt.pie(percentage_per_package, labels=percentage_per_package.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+plt.title('Percentage of Each Package Type')
+plt.show()
+
+# Declare result variable as a plot
+result = {"type": "plot", "value": plt}
+            ```
+            
+2024-05-29 16:23:04 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:23:04 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:23:06 [INFO] 
+Code running:
+```
+data = {'_id': ['63709e9f61874c26ba6c3bc8', '63960330c818b8a1038736d1', '65094f29911a102774367695'], 'user_id': ['Ur2p2h3n84l78007735h838ge7vv3x8u3', '41jNuTEvcwXxv1Kte6vUXmsaHIh2', 'IARM0iz3GHduft1CFWUI79QvARy1'], 'package_id': ['credit', 'pack_179', 'package_3200'], 'price': [210, 34, 609]}
+df = pd.DataFrame(data)
+package_counts = df['package_id'].value_counts()
+total_packages = len(df)
+percentage_per_package = package_counts / total_packages * 100
+plt.figure(figsize=(10, 6))
+plt.pie(percentage_per_package, labels=percentage_per_package.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')
+plt.title('Percentage of Each Package Type')
+plt.show()
+result = {'type': 'plot', 'value': plt}
+        ```
+2024-05-29 16:23:06 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:23:06 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'module'> must match with type plot
+
+2024-05-29 16:23:06 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-29 16:23:06 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-29 16:23:06 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-29 16:23:06 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Give me percentage of the package_id type.
+### QUERY
+ Give me percentage for each type of the package_id.
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+### ANSWER
+ Check it out: <plot>
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+You generated this python code:
+data = {'_id': ['63709e9f61874c26ba6c3bc8', '63960330c818b8a1038736d1', '65094f29911a102774367695'], 'user_id': ['Ur2p2h3n84l78007735h838ge7vv3x8u3', '41jNuTEvcwXxv1Kte6vUXmsaHIh2', 'IARM0iz3GHduft1CFWUI79QvARy1'], 'package_id': ['credit', 'pack_179', 'package_3200'], 'price': [210, 34, 609]}
+df = pd.DataFrame(data)
+package_counts = df['package_id'].value_counts()
+total_packages = len(df)
+percentage_per_package = package_counts / total_packages * 100
+plt.figure(figsize=(10, 6))
+plt.pie(percentage_per_package, labels=percentage_per_package.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')
+plt.title('Percentage of Each Package Type')
+plt.show()
+result = {'type': 'plot', 'value': plt}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 97, in execute
+    raise InvalidOutputValueMismatch(
+pandasai.exceptions.InvalidOutputValueMismatch: Value type <class 'module'> must match with type plot
+
+
+Fix the python code above and return the new python code:
+2024-05-29 16:23:06 [INFO] Executing Step 1: CodeGenerator
+2024-05-29 16:23:12 [ERROR] Pipeline failed on step 1: No code found in the response
+2024-05-29 16:23:12 [ERROR] Pipeline failed on step 6: No code found in the response
+2024-05-29 16:25:31 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:25:31 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:25:31 [INFO] Prompt ID: 5eb8f8f6-4304-4346-a81d-4aff834810bb
+2024-05-29 16:25:31 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:25:31 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:25:31 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:25:31 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:25:34 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:25:34 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:25:39 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:25:39 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Concatenate all dataframes in dfs list
+df = pd.concat(dfs, ignore_index=True)
+
+# Calculate percentage for each type of package_id
+percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Plot the percentage distribution
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage Distribution of package_id Types')
+plt.xlabel('package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('package_id_percentage_chart.png')
+
+# Declare result variable
+result = {
+    "type": "plot",
+    "value": "package_id_percentage_chart.png"
+}
+            ```
+            
+2024-05-29 16:25:39 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:25:39 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:25:39 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:25:39 [INFO] 
+Code running:
+```
+df = pd.concat(dfs, ignore_index=True)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage Distribution of package_id Types')
+plt.xlabel('package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:25:39 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:25:40 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:25:40 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:25:40 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:29:56 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:29:56 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:29:56 [INFO] Prompt ID: 04dc2adb-ce4d-4838-815f-ede87598bbfe
+2024-05-29 16:29:56 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:29:56 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:29:56 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:29:56 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:29:59 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:29:59 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:30:04 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:30:04 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Combine all package_id types
+package_types = dfs[0]['package_id'].value_counts(normalize=True) * 100
+
+# Plotting the percentage of each package_id type
+plt.figure(figsize=(10, 6))
+package_types.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id Types')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot
+plt.savefig('package_id_percentage.png')
+
+# Prepare the result variable
+result = {"type": "plot", "value": "package_id_percentage.png"}
+            ```
+            
+2024-05-29 16:30:04 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:30:04 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:30:04 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:30:04 [INFO] 
+Code running:
+```
+package_types = dfs[0]['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+package_types.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id Types')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:30:04 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:30:05 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:30:05 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:30:05 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:32:49 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:32:49 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:32:49 [INFO] Prompt ID: d8fee6c2-29e2-4525-9643-798a9cdfe161
+2024-05-29 16:32:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:32:49 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:32:49 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:32:49 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:32:52 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:32:52 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:32:57 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:32:57 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Concatenate all dataframes in dfs list
+df = pd.concat(dfs)
+
+# Group by package_id and calculate the percentage
+percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Plotting the percentage for each type of the package_id
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage for Each Type of Package_ID')
+plt.xlabel('Package ID')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a PNG file
+plt.savefig('package_id_percentage.png')
+
+# Declare result as the path to the saved plot
+result = {"type": "plot", "value": "package_id_percentage.png"}
+            ```
+            
+2024-05-29 16:32:57 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:32:57 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:32:57 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:32:57 [INFO] 
+Code running:
+```
+df = pd.concat(dfs)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage for Each Type of Package_ID')
+plt.xlabel('Package ID')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:32:57 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:32:59 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:32:59 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:32:59 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:34:50 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:34:50 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:34:50 [INFO] Prompt ID: a1c765ca-a492-446d-b692-716654ce90fb
+2024-05-29 16:34:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:34:50 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:34:50 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:34:50 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:34:54 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:34:54 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:34:59 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:34:59 [INFO] Code generated:
+            ```
+            import pandas as pd
+import matplotlib.pyplot as plt
+
+# Getting the package_id types and their counts
+package_id_counts = dfs[0]['package_id'].value_counts()
+
+# Calculating the percentage for each type of package_id
+percentage_package_id = (package_id_counts / package_id_counts.sum()) * 100
+
+# Plotting a bar chart
+plt.figure(figsize=(10, 6))
+percentage_package_id.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('percentage_package_id_chart.png')
+
+# Prepare the result dictionary
+result = {"type": "plot", "value": "percentage_package_id_chart.png"}
+result
+            ```
+            
+2024-05-29 16:34:59 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:34:59 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:34:59 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:34:59 [INFO] 
+Code running:
+```
+package_id_counts = dfs[0]['package_id'].value_counts()
+percentage_package_id = package_id_counts / package_id_counts.sum() * 100
+plt.figure(figsize=(10, 6))
+percentage_package_id.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+result
+        ```
+2024-05-29 16:34:59 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:35:01 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:35:01 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:35:01 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:36:50 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:36:50 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:36:50 [INFO] Prompt ID: 566b6f6e-0c2c-44ad-ae88-b349c6ecffc8
+2024-05-29 16:36:50 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:36:50 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:36:50 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:36:50 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:36:53 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:36:53 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:36:58 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:36:58 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Concatenate all dataframes in dfs list
+df = pd.concat(dfs, ignore_index=True)
+
+# Calculate percentage for each type of package_id
+package_id_percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Plotting the percentage for each type of package_id
+plt.figure(figsize=(10, 6))
+package_id_percentage.plot(kind='bar', color='skyblue')
+plt.xlabel('Package ID Type')
+plt.ylabel('Percentage (%)')
+plt.title('Percentage of Each Package ID Type')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('package_id_percentage_chart.png')
+
+# Declare result variable as a dictionary
+result = {"type": "plot", "value": "package_id_percentage_chart.png"}
+            ```
+            
+2024-05-29 16:36:58 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:36:58 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:36:58 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:36:58 [INFO] 
+Code running:
+```
+df = pd.concat(dfs, ignore_index=True)
+package_id_percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+package_id_percentage.plot(kind='bar', color='skyblue')
+plt.xlabel('Package ID Type')
+plt.ylabel('Percentage (%)')
+plt.title('Percentage of Each Package ID Type')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:36:58 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:37:00 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:37:00 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:37:00 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:37:27 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:37:27 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:37:27 [INFO] Prompt ID: 04adffb0-34ea-4054-8864-dcc7582ac294
+2024-05-29 16:37:27 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:37:27 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:37:27 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:37:27 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:37:30 [INFO] Using prompt: <dataframe>
+dfs[0]:546208x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+63709e9f61874c26ba6c3bc8,Ur2p2h3n84l78007735h838ge7vv3x8u3,credit,210,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211122311305303764540115802TH5909LUGENTPAY6212070843000125630452D3,01075360003740400000220300124343000125230315125615,2022-11-16 11:34:28,TTS-1JSZORWYWALMA6EZ,False,64,110.00000000000001,2022-11-19 05:28:53.957,krudao,nan,add_on,Pro,12
+63960330c818b8a1038736d1,41jNuTEvcwXxv1Kte6vUXmsaHIh2,pack_179,34,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110841555303764540115802TH5909LUGENTPAY621207084300012563041F3B,01075360003740400000220300124343000125220912155550,2022-11-12 02:41:18,TTS-PKU8GO9JNXIRLLB9,nan,638,5000,2022-11-16 13:44:16.176,5270692411133438,Unlimited,subscription,Free,11
+65094f29911a102774367695,IARM0iz3GHduft1CFWUI79QvARy1,package_3200,609,00020101021230820016A0000006770101120115010753600037404021500000220300124303204300012522121023300953037645402135802TH5909LUGENTPAY62120708430001256304868E,01075360003740400000220300124343000125221127093000,2022-11-09 16:45:44,TTS-HARFLMY99FLVOA58,True,627,50,2022-11-08 15:40:02.787,foil17pc,Compensate_basic,nan,Pro plus,8
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make a chart for percentage for each type of the package_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-29 16:37:30 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:37:36 [INFO] Prompt used:
+            None
+            
+2024-05-29 16:37:36 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Combine all dataframes in dfs list into one dataframe
+df = pd.concat(dfs)
+
+# Calculate the percentage for each type of package_id
+percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Plotting the chart
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as png
+plt.savefig('package_id_percentage_chart.png')
+
+# Declare result as the path to the saved chart
+result = {"type": "plot", "value": "package_id_percentage_chart.png"}
+            ```
+            
+2024-05-29 16:37:36 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:37:36 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:37:36 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:37:36 [INFO] 
+Code running:
+```
+df = pd.concat(dfs)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:37:36 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:37:37 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:37:37 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:37:37 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:40:20 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:40:20 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:40:20 [INFO] Prompt ID: e6b1259a-12a5-4ec4-9a55-28fca4b580bc
+2024-05-29 16:40:20 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:40:20 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:40:20 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:40:20 [INFO] Using cached response
+2024-05-29 16:40:20 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:40:20 [INFO] Executing Step 2: Skipping...
+2024-05-29 16:40:20 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:40:20 [INFO] Executing Step 3: Skipping...
+2024-05-29 16:40:20 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:40:20 [INFO] Executing Step 4: Skipping...
+2024-05-29 16:40:20 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:40:20 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:40:20 [INFO] 
+Code running:
+```
+df = pd.concat(dfs)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:40:20 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:40:22 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:40:22 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:40:22 [INFO] Executing Step 8: ResultParsing
+2024-05-29 16:42:18 [INFO] Question: Make a chart for percentage for each type of the package_id.
+2024-05-29 16:42:18 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-29 16:42:18 [INFO] Prompt ID: cc587fa8-20d7-42aa-b8d8-983a6f494ef3
+2024-05-29 16:42:18 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-29 16:42:18 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-29 16:42:18 [INFO] Executing Step 1: CacheLookup
+2024-05-29 16:42:18 [INFO] Using cached response
+2024-05-29 16:42:18 [INFO] Executing Step 2: PromptGeneration
+2024-05-29 16:42:18 [INFO] Executing Step 2: Skipping...
+2024-05-29 16:42:18 [INFO] Executing Step 3: CodeGenerator
+2024-05-29 16:42:18 [INFO] Executing Step 3: Skipping...
+2024-05-29 16:42:18 [INFO] Executing Step 4: CachePopulation
+2024-05-29 16:42:18 [INFO] Executing Step 4: Skipping...
+2024-05-29 16:42:18 [INFO] Executing Step 5: CodeCleaning
+2024-05-29 16:42:18 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-29 16:42:18 [INFO] 
+Code running:
+```
+df = pd.concat(dfs)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Package_id')
+plt.xlabel('Package_id Type')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-29 16:42:18 [INFO] Executing Step 6: CodeExecution
+2024-05-29 16:42:20 [INFO] Executing Step 7: ResultValidation
+2024-05-29 16:42:20 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-29 16:42:20 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:18:44 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:18:45 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:18:45 [INFO] Prompt ID: 8a86d708-24f4-4e3e-b956-f1360bed3cd6
+2024-05-30 13:18:45 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:18:49 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:18:49 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:18:49 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:18:53 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:18:53 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:18:58 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:18:58 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Concatenate all dataframes in dfs list into a single dataframe
+df = pd.concat(dfs, ignore_index=True)
+
+# Calculate the percentage of each type of product_id
+product_percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Create a bar chart for the percentage of each type of product_id
+plt.figure(figsize=(10, 6))
+product_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Product ID')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('product_id_percentage_chart.png')
+
+# Declare result variable
+result = {"type": "plot", "value": "product_id_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:18:58 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:18:58 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:18:58 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:18:58 [INFO] 
+Code running:
+```
+df = pd.concat(dfs, ignore_index=True)
+product_percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+product_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of Product ID')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage (%)')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:18:58 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:18:59 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:18:59 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:19:00 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:19:54 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:19:54 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:19:54 [INFO] Prompt ID: bda02668-28c2-49b7-8ee6-9870459eae23
+2024-05-30 13:19:54 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:19:54 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:19:54 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:19:54 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:19:57 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:19:57 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:20:03 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:20:03 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extract product_id from the dataframe
+product_ids = dfs[0]['package_id']
+
+# Calculate the percentage of each product_id
+product_id_percentage = product_ids.value_counts(normalize=True) * 100
+
+# Plotting a bar chart
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('product_id_percentage_chart.png')
+
+# Declare result variable as a plot
+result = {"type": "plot", "value": "product_id_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:20:03 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:20:03 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:20:03 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:20:03 [INFO] 
+Code running:
+```
+product_ids = dfs[0]['package_id']
+product_id_percentage = product_ids.value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:20:03 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:20:04 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:20:04 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:20:04 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:20:37 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:20:37 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:20:37 [INFO] Prompt ID: f4b82026-e3be-412c-b795-8fb4e27ae9a3
+2024-05-30 13:20:37 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:20:37 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:20:37 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:20:37 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:20:41 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:20:41 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:20:48 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:20:48 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Load the data
+data = {
+    '_id': ['626c09de2cce22f46c13b8b8', '64080d4a932dafeee9f286e4', '626bc318e4daf7159efeb157'],
+    'user_id': ['Uf79bbed70353eb5eb20f458c90cbfca5', 'IOnsKYhkAEbsyN7Ilptl9zGPMCP2', 'U9a2661997f75f21dbf1134a8e4547b18'],
+    'package_id': ['package_300', '600', 'pack_599'],
+    'price': [99, 16, 27]
+}
+df = pd.DataFrame(data)
+
+# Calculate percentage of each type of product_id
+percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Plot the chart
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 6))
+plt.pie(percentage, labels=percentage.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+# Save the plot as png
+plt.savefig('product_percentage_chart.png')
+
+# Declare result var
+result = {"type": "plot", "value": "product_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:20:48 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:20:48 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:20:48 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:20:49 [INFO] 
+Code running:
+```
+data = {'_id': ['626c09de2cce22f46c13b8b8', '64080d4a932dafeee9f286e4', '626bc318e4daf7159efeb157'], 'user_id': ['Uf79bbed70353eb5eb20f458c90cbfca5', 'IOnsKYhkAEbsyN7Ilptl9zGPMCP2', 'U9a2661997f75f21dbf1134a8e4547b18'], 'package_id': ['package_300', '600', 'pack_599'], 'price': [99, 16, 27]}
+df = pd.DataFrame(data)
+percentage = df['package_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+plt.pie(percentage, labels=percentage.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:20:49 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:20:49 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:20:49 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:20:49 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:21:16 [INFO] Question: Show me the percentage of each type of product_id.
+2024-05-30 13:21:16 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:21:16 [INFO] Prompt ID: 8ef37499-b27f-4717-9e3b-5b1e71cfa90f
+2024-05-30 13:21:16 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:21:16 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:21:16 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:21:16 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:21:19 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me the percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:21:19 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:21:25 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:21:25 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Load the data into a DataFrame
+data = {
+    '_id': ['626c09de2cce22f46c13b8b8', '64080d4a932dafeee9f286e4', '626bc318e4daf7159efeb157'],
+    'package_id': ['package_300', '600', 'pack_599']
+}
+df = pd.DataFrame(data)
+
+# Calculate the percentage of each type of product_id
+product_id_percentage = df['package_id'].value_counts(normalize=True) * 100
+
+# Create a new DataFrame with the percentage values
+result_df = pd.DataFrame(product_id_percentage).reset_index()
+result_df.columns = ['package_id', 'percentage']
+
+result = {"type": "dataframe", "value": result_df}
+            ```
+            
+2024-05-30 13:21:25 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:21:25 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:21:26 [INFO] 
+Code running:
+```
+data = {'_id': ['626c09de2cce22f46c13b8b8', '64080d4a932dafeee9f286e4', '626bc318e4daf7159efeb157'], 'package_id': ['package_300', '600', 'pack_599']}
+df = pd.DataFrame(data)
+product_id_percentage = df['package_id'].value_counts(normalize=True) * 100
+result_df = pd.DataFrame(product_id_percentage).reset_index()
+result_df.columns = ['package_id', 'percentage']
+result = {'type': 'dataframe', 'value': result_df}
+        ```
+2024-05-30 13:21:26 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:21:26 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:21:26 [INFO] Answer: {'type': 'dataframe', 'value':     package_id  percentage
+0  package_300   33.333333
+1          600   33.333333
+2     pack_599   33.333333}
+2024-05-30 13:21:26 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:21:38 [INFO] Question: Show me the percentage of each type of product_id.
+2024-05-30 13:21:38 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:21:38 [INFO] Prompt ID: 7611ca33-e8c7-4c87-9e3b-29b90b183675
+2024-05-30 13:21:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:21:38 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:21:38 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:21:38 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:21:43 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me the percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:21:43 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:21:47 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:21:47 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Get the product_id counts
+product_id_counts = dfs[0]['package_id'].value_counts()
+
+# Calculate the percentage of each product_id
+product_id_percentages = (product_id_counts / product_id_counts.sum()) * 100
+
+result = {"type": "dataframe", "value": product_id_percentages}
+            ```
+            
+2024-05-30 13:21:47 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:21:47 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:21:47 [INFO] 
+Code running:
+```
+product_id_counts = dfs[0]['package_id'].value_counts()
+product_id_percentages = product_id_counts / product_id_counts.sum() * 100
+result = {'type': 'dataframe', 'value': product_id_percentages}
+        ```
+2024-05-30 13:21:47 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:21:47 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:21:47 [INFO] Answer: {'type': 'dataframe', 'value':                   package_id
+credits            88.117266
+package_100         3.553855
+package_50          3.055759
+credit              1.607600
+pack_299            0.632643
+pack_99             0.589258
+package_200         0.519148
+Mini                0.376913
+Basic               0.368126
+mini                0.335908
+package_400         0.136377
+pack_750            0.124112
+Advanced            0.069928
+NoAds               0.058944
+package_800         0.047229
+pack_499            0.045581
+package_500         0.040089
+nan                 0.036245
+pack_599            0.031486
+6                   0.027825
+package_6400        0.026726
+package_300         0.025811
+pack_600            0.025628
+package_1600        0.020868
+1                   0.018306
+pack_2000           0.016475
+3                   0.016109
+pack_1299           0.011533
+pack_179            0.010800
+Pro                 0.010068
+package_3200        0.009336
+package_1000        0.008421
+pack_1699           0.006956
+Unlimited           0.003295
+pack_5000           0.002380
+pack_1099           0.002380
+150                 0.002014
+Free                0.001464
+pack_2499           0.001464
+pack_10000          0.001464
+Compensate_basic    0.001281
+Pro plus            0.000915
+pack_20000          0.000549
+pack_2500           0.000366
+pack_13500          0.000183
+                    0.000183
+4                   0.000183
+6400                0.000183
+5                   0.000183
+600                 0.000183}
+2024-05-30 13:21:47 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:30:45 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:30:45 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:30:45 [INFO] Prompt ID: e69300b0-491b-4a2b-aca6-66992d60a915
+2024-05-30 13:30:45 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:30:45 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:30:45 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:30:45 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:30:49 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:30:49 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:30:51 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:30:51 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:30:51 [INFO] Prompt ID: f043e547-2c66-4d5e-a6de-779fbfc343f2
+2024-05-30 13:30:51 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:30:51 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:30:51 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:30:51 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:30:54 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:30:54 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extract product_id from the dataframe
+product_ids = dfs[0]['package_id']
+
+# Calculate the percentage of each product_id
+percentage_per_product_id = product_ids.value_counts(normalize=True) * 100
+
+# Plot a bar chart for the percentage of each product_id
+plt.figure(figsize=(10, 6))
+percentage_per_product_id.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('product_id_percentage_chart.png')
+
+# Declare result var with the path to the saved chart
+result = {"type": "plot", "value": "product_id_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:30:54 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:30:54 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:30:54 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:30:54 [INFO] 
+Code running:
+```
+product_ids = dfs[0]['package_id']
+percentage_per_product_id = product_ids.value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+percentage_per_product_id.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Percentage')
+plt.title('Percentage of Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:30:54 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:30:56 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:30:56 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:30:56 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:30:56 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:30:56 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:30:57 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:30:57 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:30:57 [INFO] Prompt ID: d172be8c-a763-4e12-9e1a-1619d3f10dfc
+2024-05-30 13:30:57 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:30:57 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:30:57 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:30:57 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:31:00 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:31:00 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:31:02 [INFO] Question: Make me chart for percentage of each type of product_id.
+2024-05-30 13:31:02 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:31:02 [INFO] Prompt ID: cb7b50d1-1883-4af4-aa83-bcefb9d43ab3
+2024-05-30 13:31:02 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:31:02 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:31:02 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:31:02 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:31:02 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:31:02 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extract product_id from the dataframe
+product_ids = dfs[0]['package_id']
+
+# Calculate the percentage of each product_id
+product_id_percentage = product_ids.value_counts(normalize=True) * 100
+
+# Plotting the percentage of each product_id
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a PNG file
+plt.savefig('product_id_percentage_chart.png')
+
+# Declare result variable as a dictionary with plot type and the saved file name
+result = {"type": "plot", "value": "product_id_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:31:02 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:31:02 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:31:02 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:31:02 [INFO] 
+Code running:
+```
+product_ids = dfs[0]['package_id']
+product_id_percentage = product_ids.value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:31:02 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:31:03 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:31:03 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:31:03 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:31:05 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### ANSWER
+ Check it out: <plot>
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:31:05 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:31:06 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:31:06 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Concatenate all dataframes in dfs list
+df = pd.concat(dfs)
+
+# Calculate percentage of each type of product_id
+product_id_percentage = df['product_id'].value_counts(normalize=True) * 100
+
+# Plotting the percentages
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('product_id_percentage_chart.png')
+
+# Assign the plot file name to result variable
+result = {"type": "plot", "value": "product_id_percentage_chart.png"}
+            ```
+            
+2024-05-30 13:31:06 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:31:06 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:31:06 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:31:06 [INFO] 
+Code running:
+```
+df = pd.concat(dfs)
+product_id_percentage = df['product_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:31:06 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:31:07 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'product_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'product_id'
+
+2024-05-30 13:31:07 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-30 13:31:07 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-30 13:31:07 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-30 13:31:07 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Show me the percentage of each type of product_id.
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Show me the percentage of each type of product_id.
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### ANSWER
+ Check it out: <plot>
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### ANSWER
+ Check it out: <plot>
+
+You generated this python code:
+df = pd.concat(dfs)
+product_id_percentage = df['product_id'].value_counts(normalize=True) * 100
+plt.figure(figsize=(10, 6))
+product_id_percentage.plot(kind='bar', color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'product_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 2, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'product_id'
+
+
+Fix the python code above and return the new python code:
+2024-05-30 13:31:07 [INFO] Executing Step 1: CodeGenerator
+2024-05-30 13:31:09 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:31:09 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Dataframe with product_id percentages
+dfs[0]['product_id'].value_counts(normalize=True).plot(kind='bar', figsize=(10, 6), color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.show()
+
+result = {
+    "type": "plot",
+    "value": "product_id_percentage_chart.png"
+}
+            ```
+            
+2024-05-30 13:31:09 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:31:09 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:31:09 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:31:09 [INFO] 
+Code running:
+```
+dfs[0]['product_id'].value_counts(normalize=True).plot(kind='bar', figsize=(10, 6), color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.show()
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:31:09 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:31:09 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'product_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'product_id'
+
+2024-05-30 13:31:09 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-05-30 13:31:09 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-05-30 13:31:09 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-05-30 13:31:09 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Show me the percentage of each type of product_id.
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Show me the percentage of each type of product_id.
+### ANSWER
+ Check it out: <dataframe>
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### ANSWER
+ Check it out: <plot>
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### QUERY
+ Make me chart for percentage of each type of product_id.
+### ANSWER
+ Check it out: <plot>
+
+You generated this python code:
+dfs[0]['product_id'].value_counts(normalize=True).plot(kind='bar', figsize=(10, 6), color='skyblue')
+plt.title('Percentage of Each Type of product_id')
+plt.xlabel('product_id')
+plt.ylabel('Percentage')
+plt.show()
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'product_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'product_id'
+
+
+Fix the python code above and return the new python code:
+2024-05-30 13:31:09 [INFO] Executing Step 1: CodeGenerator
+2024-05-30 13:31:10 [ERROR] Pipeline failed on step 1: No code found in the response
+2024-05-30 13:31:10 [ERROR] Pipeline failed on step 6: No code found in the response
+2024-05-30 13:31:13 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:31:13 [INFO] Code generated:
+            ```
+            dfs[0]['package_id'].value_counts(normalize=True).plot(kind='bar', figsize=(10, 6), color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id')
+plt.ylabel('Percentage')
+plt.show()
+result = {'type': 'plot', 'value': '/path/to/generated_chart.png'}
+            ```
+            
+2024-05-30 13:31:13 [INFO] Executing Step 2: CodeCleaning
+2024-05-30 13:31:13 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:31:13 [INFO] 
+Code running:
+```
+dfs[0]['package_id'].value_counts(normalize=True).plot(kind='bar', figsize=(10, 6), color='skyblue')
+plt.title('Percentage of Each Type of package_id')
+plt.xlabel('package_id')
+plt.ylabel('Percentage')
+plt.show()
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:31:14 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:31:14 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:31:14 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:32:54 [INFO] Question: Make me chart for percentage of top 5 type of product_id.
+2024-05-30 13:32:54 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:32:54 [INFO] Prompt ID: 42952b0b-9beb-47cb-b124-b62e282af77d
+2024-05-30 13:32:54 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:32:54 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:32:54 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:32:54 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:32:57 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me chart for percentage of top 5 type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:32:57 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:33:02 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:33:02 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extract the top 5 types of product_id
+top_product_types = dfs[0]['package_id'].value_counts().nlargest(5)
+
+# Calculate the percentage of each type
+percentage = top_product_types / top_product_types.sum() * 100
+
+# Create a pie chart for the percentage of top 5 product types
+plt.figure(figsize=(8, 8))
+plt.pie(percentage, labels=percentage.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle
+plt.title('Percentage of Top 5 Product Types')
+plt.show()
+
+# Declare result var:
+result = {"type": "plot", "value": "temp_chart.png"}
+            ```
+            
+2024-05-30 13:33:02 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:33:02 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:33:02 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:33:02 [INFO] 
+Code running:
+```
+top_product_types = dfs[0]['package_id'].value_counts().nlargest(5)
+percentage = top_product_types / top_product_types.sum() * 100
+plt.figure(figsize=(8, 8))
+plt.pie(percentage, labels=percentage.index, autopct='%1.1f%%', startangle=140)
+plt.axis('equal')
+plt.title('Percentage of Top 5 Product Types')
+plt.show()
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:33:02 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:33:04 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:33:04 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:33:04 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:34:17 [INFO] Question: Make me barchart for the number of purchase for each type of product_id.
+2024-05-30 13:34:17 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:34:17 [INFO] Prompt ID: 825a5d62-75e8-4b6b-95b3-5111751eeef9
+2024-05-30 13:34:17 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:34:17 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:34:17 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:34:17 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:34:20 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me barchart for the number of purchase for each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:34:20 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:34:26 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:34:26 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extract the type of product_id and count the number of purchases for each type
+product_type_counts = dfs[0]['package_id'].value_counts()
+
+# Create a bar chart for the number of purchases for each type of product_id
+plt.figure(figsize=(10, 6))
+product_type_counts.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Number of Purchases')
+plt.title('Number of Purchases for Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a PNG file
+plt.savefig('product_id_purchases.png')
+
+# Declare result variable with the plot
+result = {"type": "plot", "value": "product_id_purchases.png"}
+            ```
+            
+2024-05-30 13:34:26 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:34:26 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:34:26 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:34:26 [INFO] 
+Code running:
+```
+product_type_counts = dfs[0]['package_id'].value_counts()
+plt.figure(figsize=(10, 6))
+product_type_counts.plot(kind='bar', color='skyblue')
+plt.xlabel('Product ID')
+plt.ylabel('Number of Purchases')
+plt.title('Number of Purchases for Each Type of Product ID')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:34:26 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:34:26 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:34:26 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:34:26 [INFO] Executing Step 8: ResultParsing
+2024-05-30 13:35:05 [INFO] Question: Make me barchart for 5 most number of purchase for each type of product_id.
+2024-05-30 13:35:05 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-05-30 13:35:05 [INFO] Prompt ID: 11bfed2b-379a-4513-9079-80a555b5593a
+2024-05-30 13:35:05 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-05-30 13:35:05 [INFO] Executing Step 0: ValidatePipelineInput
+2024-05-30 13:35:05 [INFO] Executing Step 1: CacheLookup
+2024-05-30 13:35:05 [INFO] Executing Step 2: PromptGeneration
+2024-05-30 13:35:08 [INFO] Using prompt: <dataframe>
+dfs[0]:546280x17
+_id,user_id,package_id,price,qrcode,transactionid,datetime,ref1,status,point,promotion,actual_time,sale_code_name,package_sub,action,subscription,sub_id
+626bc318e4daf7159efeb157,U9a2661997f75f21dbf1134a8e4547b18,pack_599,27,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211110839025303764540115802TH5909LUGENTPAY62120708430001256304A7A3,01075360003740400000220300124343000125211122120955,2023-06-10 11:37:44,TTS-1DW059IBANJ515G4,True,1312,400,2022-11-29 12:20:09.849,toton240251,Unlimited,add_on,Basic,nan
+626c09de2cce22f46c13b8b8,Uf79bbed70353eb5eb20f458c90cbfca5,package_300,99,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211111716195303764540115802TH5909LUGENTPAY621207084300012563042797,01075360003740400000220300124343000125221125135713,2022-11-13 17:01:02,TTS-X33XYU0ZUP7LEOYW,nan,639,8000,2023-09-21 04:33:46.703,394,Pro,subscription,Mini,2
+64080d4a932dafeee9f286e4,IOnsKYhkAEbsyN7Ilptl9zGPMCP2,600,16,00020101021230820016A000000677010112011501075360003740402150000022030012430320430001252211160116175303764540115802TH5909LUGENTPAY6212070843000125630419C2,01075360003740400000220300124343000125211228133215,2022-11-13 02:42:23,TTS-M4PK3GEQ93M57GIW,False,1840,220000,2022-12-02 13:18:12.311,885,Basic,nan,Free trial,11
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me barchart for 5 most number of purchase for each type of product_id.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-05-30 13:35:08 [INFO] Executing Step 3: CodeGenerator
+2024-05-30 13:35:14 [INFO] Prompt used:
+            None
+            
+2024-05-30 13:35:14 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Extracting the top 5 most purchased product_ids
+top_product_ids = dfs[0]['package_id'].value_counts().head(5)
+
+# Creating a bar chart for the top 5 most purchased product_ids
+plt.figure(figsize=(10, 6))
+top_product_ids.plot(kind='bar', color='skyblue')
+plt.title('Top 5 Most Purchased Product IDs')
+plt.xlabel('Product ID')
+plt.ylabel('Number of Purchases')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a png file
+plt.savefig('top_5_product_ids.png')
+
+# Declaring result variable as a dictionary with type and value
+result = {"type": "plot", "value": "top_5_product_ids.png"}
+            ```
+            
+2024-05-30 13:35:14 [INFO] Executing Step 4: CachePopulation
+2024-05-30 13:35:14 [INFO] Executing Step 5: CodeCleaning
+2024-05-30 13:35:14 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-05-30 13:35:14 [INFO] 
+Code running:
+```
+top_product_ids = dfs[0]['package_id'].value_counts().head(5)
+plt.figure(figsize=(10, 6))
+top_product_ids.plot(kind='bar', color='skyblue')
+plt.title('Top 5 Most Purchased Product IDs')
+plt.xlabel('Product ID')
+plt.ylabel('Number of Purchases')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-05-30 13:35:14 [INFO] Executing Step 6: CodeExecution
+2024-05-30 13:35:15 [INFO] Executing Step 7: ResultValidation
+2024-05-30 13:35:15 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-05-30 13:35:15 [INFO] Executing Step 8: ResultParsing

@@ -1,5 +1,43 @@
+import os
 import streamlit as st
 from streamlit_option_menu import option_menu
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+import pandas as pd
+from pandasai import SmartDataframe
+import cv2
+import hashlib
+
+@st.cache_resource
+def connectMongo() :
+    uri = "mongodb+srv://kong:2GgNZ7V0V0q5Go9d@botnoivoiceprod.f4igi.mongodb.net/?retryWrites=true&readPreference=secondary&readPreferenceTags=nodeType:ANALYTICS&w=majority&appName=botnoivoiceprod"
+    # Create a new client and connect to the server
+    client = MongoClient(uri, server_api=ServerApi('1'))
+    # Send a ping to confirm a successful connection
+    
+    try:
+        client.admin.command('ping')
+        print("Pinged your deployment. You successfully connected to MongoDB!")
+        paymentdb = client['prod-tts-payment']
+        df = pd.DataFrame(paymentdb.payment.find())
+        df_str = df.astype(str)
+        sdf = SmartDataframe(df_str)
+        return sdf
+    except Exception as e:
+        print(e)
+
+    paymentdb = client['prod-tts-payment']
+
+def connectOpenAI() :
+    os.environ["PANDASAI_API_KEY"] = "$2a$10$vdsfzU0rvW1vs8v1G/aMjebe.k5HuuOi3tftrf0E7c.XWH9wknn4a"
+
+def calculate_file_hash(file_path):
+    with open(file_path, "rb") as f:
+        file_hash = hashlib.sha256(f.read()).hexdigest()
+    return file_hash
+  
+connectOpenAI()
+sdf = connectMongo()
 
 sidebar_style = """
     <style>
@@ -121,9 +159,24 @@ st.subheader("Dashboard showing customer behavior")
 st.markdown("<h1 class='Top_title'>Let’s explore Insights with PandasAI</h1>", unsafe_allow_html=True)
 st.write("PandasAI is an advanced tool that integrates artificial intelligence capabilities with the Pandas library, enabling users to analyze data more efficiently. Users can prompt in natural language to analyze data directly !")
 st.markdown("<h5 style='font-weight: bold;'>Enter your prompt</h5>",unsafe_allow_html=True)
+prompt = st.text_area("Enter your prompt")
 
-
-
-
-st.markdown("<h5 style='font-weight: bold;'>Result</h5>",unsafe_allow_html=True)
-
+if st.button("Generate"):
+    if prompt:
+        last_graph = calculate_file_hash('./exports/charts/temp_chart.png')
+        with st.spinner("Generating Response..."):
+            response = sdf.chat(prompt)
+            #st.success(response)
+            st.markdown("<h5 style='font-weight: bold;'>Result</h5>",unsafe_allow_html=True)
+            new_graph = calculate_file_hash('./exports/charts/temp_chart.png')
+    
+            if last_graph != new_graph:
+                try:
+                    graph = cv2.imread('./exports/charts/temp_chart.png')
+                    st.image(graph, caption=response)
+                except FileNotFoundError:
+                    st.error("The plot image was not found.")
+            else:
+                st.write(response)
+    else:
+        st.warning("Please enter a prompt")
