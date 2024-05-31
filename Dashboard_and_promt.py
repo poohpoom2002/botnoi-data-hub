@@ -435,11 +435,12 @@ def quartile_cdp(cdp) :
     kmeans = KMeans(n_clusters=n_clusters, random_state=42)
     cdp['Cluster'] = kmeans.fit_predict(X_scaled)
 
-    cdp['Cluster'] = cdp['Cluster'].replace({ 0 : 'ลูกค้าประจำ ใช้งานบ่อย แต่เติมไม่เยอะมาก', 1 : 'ลูกค้าชั้นดี เติมเยอะและยังใช้งานอยู่ ', 2 : 'ลูกค้าที่หายไปนาน ยอดเติมเงินน้อย', 3 : 'ลูกค้าที่มียอดเติมเงินเยอะ แต่หายไปนาน'})
+    cdp['Cluster'] = cdp['Cluster'].replace({ 0 : 'ลูกค้าชั้นดี เติมเยอะ ใช้งานบ่อย', 1 : 'ลูกค้าที่หลงมา เติมน้อย ไม่ได้ใช้นานแล้ว ', 2 : 'ลูกค้าประจำ เติมไม่เยอะมาก ใช้งานบ่อยมาก', 3 : 'ลูกค้าชั้นดีที่หายไป เติมเยอะ ไม่ได้ใช้นานแล้ว'})
 
     return cdp
 
 def cdp_searcher(cdp, user_id) :
+    cdp = quartile_cdp(cdp)
     cluster = cdp[cdp['user_id'] == user_id]['Cluster']
     return cluster
   
