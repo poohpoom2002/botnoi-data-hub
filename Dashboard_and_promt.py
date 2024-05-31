@@ -72,7 +72,7 @@ def connectMongo() :
         df_message_droped['Day'] = df_message_droped['Day'].astype('Int32')
         df_message_droped['Hour'] = df_message_droped['Hour'].astype('Int32')
 
-        return df_pay_droped.astype(str), df_message_droped.astype(str)
+        return [df_pay_droped.astype(str), df_message_droped.astype(str)]
     
     except Exception as e:
         print(e)
@@ -444,8 +444,10 @@ def cdp_searcher(cdp, user_id) :
     return cluster
   
 connectOpenAI()
-df_pay, df_message = connectMongo()
-sdf = SmartDataframe(df_pay)
+df = connectMongo()
+df_pay = df[0]
+df_message = df[1]
+df_lake = to_smartDataLake(df_pay  , df_message)
 
 sidebar_style = """
     <style>
@@ -616,7 +618,7 @@ if st.button("Generate"):
     if prompt:
         last_graph = calculate_file_hash('./exports/charts/temp_chart.png')
         with st.spinner("Generating Response..."):
-            response = sdf.chat(prompt)
+            response = df_lake.chat(prompt)
             #st.success(response)
             st.markdown("<h5 style='font-weight: bold;'>Result</h5>",unsafe_allow_html=True)
             new_graph = calculate_file_hash('./exports/charts/temp_chart.png')
