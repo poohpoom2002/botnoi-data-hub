@@ -5956,3 +5956,1556 @@ result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hu
 2024-05-31 05:14:22 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6658fa3e311e5af73388ee91, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6658fa3e311e5af73388ee91"}, "remainingTimeMS": 29}
 2024-05-31 05:15:00 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6658fa64311e5af73388ee92, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6658fa64311e5af73388ee92"}, "remainingTimeMS": 29}
 2024-05-31 05:17:06 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6658fae2311e5af73388ee93, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6658fae2311e5af73388ee93"}, "remainingTimeMS": 29}
+2024-06-10 13:46:05 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6666a12df65479e71531c119, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6666a12df65479e71531c119"}, "remainingTimeMS": 29}
+2024-06-10 15:07:59 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6666b45ff65479e71531c11a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6666b45ff65479e71531c11a"}, "remainingTimeMS": 29}
+2024-06-10 15:09:55 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6666b4d3f65479e71531c11b, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6666b4d3f65479e71531c11b"}, "remainingTimeMS": 29}
+2024-06-10 17:58:01 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6666dc39f65479e71531c11c, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6666dc39f65479e71531c11c"}, "remainingTimeMS": 29}
+2024-06-10 19:17:17 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6666eecdf65479e71531c11d, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6666eecdf65479e71531c11d"}, "remainingTimeMS": 29}
+2024-06-11 10:13:39 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 6667c0e3f65479e71531c11e, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "6667c0e3f65479e71531c11e"}, "remainingTimeMS": 29}
+2024-06-13 23:58:30 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 666b2536f65479e71531c11f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "666b2536f65479e71531c11f"}, "remainingTimeMS": 29}
+2024-06-14 08:40:39 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 666b9f97f65479e71531c120, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "666b9f97f65479e71531c120"}, "remainingTimeMS": 29}
+2024-06-14 09:22:31 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 666ba967f65479e71531c121, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "666ba967f65479e71531c121"}, "remainingTimeMS": 29}
+2024-06-14 11:10:52 [INFO] Question: Make me a Barchart for the top 5 user transaction
+2024-06-14 11:10:52 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 11:10:52 [INFO] Prompt ID: d21d38ed-fabe-4061-b577-4b1550f01518
+2024-06-14 11:10:52 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 11:11:34 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 11:11:34 [INFO] Executing Step 1: CacheLookup
+2024-06-14 11:11:34 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 11:11:37 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x16
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter
+6621f10faac092e235a213d5,yZJNjTBA5VZerv4i21PLjdRnjXz2,Pro,299.0,2024-03-10 13:30:35,True,30.0,2024,4,17,6,16,Tuesday,2024Q2,Quarter 2 2024,1
+65f4175b96defb90c5dbf726,1n43RV5vY2TguH74gRnmxVEIifw1,NoAds,4.0,2024-02-27 18:55:50,True,139.0,2024,3,20,9,9,Saturday,2024Q2,Quarter 1 2024,2
+65bb8e33674f0c115a6c0d2e,MrEnOEw86JXrcisaFL4MYiFH3Fn2,pack_10000,97.0,2024-01-03 01:00:37,True,500.0,2024,6,1,12,6,Monday,2024Q1,Quarter 1 2024,2
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65dc5cc67c3c432b65371827,PNOb8JSC13X9Winf8q2LMH4YwRd2,เซิ่งกระติ๊บข้าว,2024-05-17 09:50:23,download,310.0,flower,nan,zh,2024,3,14,24,15,Thursday
+664c5b3ea395cb8994cf302f,GvNAvVsirGamsmerNk5m1OKNNgq1,ข้อมูลประวัติการรับราชการข้าพเจ้าบรรจุเมื่อวันที่17สิงหาคม2554ปัจจุบันดำรงตำแหน่งครูวิทยฐานะชำนาญการพิเศษ,2024-03-13 16:21:50,download,1031.0,26,nan,ko,2024,4,20,21,4,Tuesday
+65d83c38e426f0fdbd0cd045,fg1pjeBvx2ckVIljMqbqLs8OEmN2,เป็นการประชาสัมพันธ์โครงการผ่าตัดทำหมันเพื่อควบคุมประชากรสุนัขและแมวในพื้นที่ตำบลแม่สะลองนอกจำนวน2วันได้แก่,2024-03-25 12:29:37,download,1772.0,blend11,canva,th,2024,6,16,4,9,Friday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Make me a Barchart for the top 5 user transaction
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 11:11:37 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 11:11:40 [INFO] Prompt used:
+            None
+            
+2024-06-14 11:11:40 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Combining the dataframes
+df_combined = pd.concat(dfs)
+
+# Getting the top 5 user transactions based on price
+top_5_transactions = df_combined.nlargest(5, 'price')
+
+# Creating a bar chart for the top 5 user transactions
+plt.figure(figsize=(10, 6))
+plt.bar(top_5_transactions['user_id'], top_5_transactions['price'], color='skyblue')
+plt.xlabel('User ID')
+plt.ylabel('Price')
+plt.title('Top 5 User Transactions by Price')
+plt.xticks(rotation=45)
+plt.tight_layout()
+
+# Save the plot as a PNG file
+plt.savefig('top_user_transactions.png')
+
+# Declare result variable
+result = {"type": "plot", "value": "top_user_transactions.png"}
+            ```
+            
+2024-06-14 11:11:40 [INFO] Executing Step 4: CachePopulation
+2024-06-14 11:11:40 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 11:11:40 [INFO] Saving charts to /Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png
+2024-06-14 11:11:40 [INFO] 
+Code running:
+```
+df_combined = pd.concat(dfs)
+top_5_transactions = df_combined.nlargest(5, 'price')
+plt.figure(figsize=(10, 6))
+plt.bar(top_5_transactions['user_id'], top_5_transactions['price'], color='skyblue')
+plt.xlabel('User ID')
+plt.ylabel('Price')
+plt.title('Top 5 User Transactions by Price')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig('/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png')
+result = {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+        ```
+2024-06-14 11:11:40 [INFO] Executing Step 6: CodeExecution
+2024-06-14 11:12:52 [INFO] Executing Step 7: ResultValidation
+2024-06-14 11:12:52 [INFO] Answer: {'type': 'plot', 'value': '/Users/poohpoom2002/Documents/Botnoi-Data-Hub/exports/charts/temp_chart.png'}
+2024-06-14 11:12:52 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:45:22 [INFO] Question: Show me this user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1" last 5 messages.
+2024-06-14 14:45:22 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:45:22 [INFO] Prompt ID: 8009958a-f1aa-4fb1-9d4f-a9db871eff17
+2024-06-14 14:45:22 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:46:13 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:46:13 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:46:13 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:46:16 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+6604b8312adb7fdc7fe556ec,yNs2NyvHgvaVB0KdCK0GF2XG5dW2,Unlimited,129.0,2024-05-22 20:37:57,True,165.0,2024,4,23,1,18,Friday,2024Q2,Quarter 2 2024,2,2024-01-25
+65f27b6296defb90c5dbf61c,U9203a127c458c8ee5842000deadfe758,pack_1299,2499.0,2024-01-20 21:42:21,True,64.0,2024,2,9,19,22,Monday,2024Q1,Quarter 2 2024,1,2024-05-25
+6604c7e52adb7fdc7fe556ef,aqI20RR1qnYBX21H5fVRuRwOD592,pack_1699,149.0,2024-03-07 15:17:29,True,4120.0,2024,5,7,24,5,Saturday,2024Q1,Quarter 1 2024,1,2024-06-03
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65faa4ec5b00de0714b62868,9yYyNyiZRKe0JaveBuFmGfZ3FGm1,24-01-04ได้แน่นอนค่ะสามารถนำรถเข้าซ่อมสีตอนเช้าแล้วรับรถตอนเย็นได้ด้วยอุปกรณ์ที่ทันสมัยของเราพร้อมทีมช่างที่มีประสบการณ์และห้องอบที่ได้มาตรฐาน,2024-04-22 11:04:00.000000,download,616.0,terapat,canva,id,2024,5,11,31,9,Saturday
+6613ff90b538440e45fad1e4,4Vg0mzLN2Fdlm3bzDZdtQKumcXI2,การปฏิบัติงานในสถานศึกษานอกจากการจัดการเรียนรู้ในชั้นเรียนแล้วข้าพเจ้าทุ่มเทแรงกายแรงใจในการปฏิบัติงานทางด้านวิชาการของสถานศึกษาด้วยความมุ่งมั่นตั้งใจอยากเห็นการเปลี่ยนแปลงของโรงเรียนบ้านสี่แยกสมเด็จตามนโยบายของผู้บริหารสถานศึกษางานที่ได้รับมอบหมายเช่นโครงการยกผลสัมฤทธิ์ผู้เรียนผู้ประสานงานและผู้รับผิดชอบโครงการการทดสอบระดับชาติRTNTโอ-เน็ตการรับสมัครนักเรียนตลอดจนการประเมินพัฒนาการของนักเรียนชั้นประถมวัยและชั้นประถมศึกษาปีที่1,2024-03-18 16:00:53.000000,download,438.0,89,canva,my,2024,3,20,6,3,Thursday
+6633afba70306ffdfa649a16,U006e002554f13143a2268e0657fd5376,การกระทำหรือเหตุการณ์ที่อาจก่อให้เกิดความเสียหายต่อข้อมูล,2024-04-28 15:59:33.505529,download,469.0,lo_bbb560576,nan,km,2024,2,15,5,2,Wednesday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me this user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1" last 5 messages.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:46:16 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:46:19 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:46:19 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+user_id = "QzJOQkPFJcQnSiARe4mR8s3z2Ez1"
+last_5_messages = []
+
+for df in dfs:
+    if "user_id" in df.columns:
+        user_messages = df[df["user_id"] == user_id]
+        if not user_messages.empty:
+            last_5_messages.extend(user_messages.tail(5))
+
+result = {"type": "dataframe", "value": pd.DataFrame(last_5_messages)}
+            ```
+            
+2024-06-14 14:46:19 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:46:19 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:46:19 [INFO] 
+Code running:
+```
+user_id = 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'
+last_5_messages = []
+for df in dfs:
+    if 'user_id' in df.columns:
+        user_messages = df[df['user_id'] == user_id]
+        if not user_messages.empty:
+            last_5_messages.extend(user_messages.tail(5))
+result = {'type': 'dataframe', 'value': pd.DataFrame(last_5_messages)}
+        ```
+2024-06-14 14:46:19 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:46:20 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:46:20 [INFO] Answer: {'type': 'dataframe', 'value':                 0
+0             _id
+1         user_id
+2      package_id
+3           price
+4        datetime
+5          status
+6           point
+7            Year
+8           Month
+9            Week
+10            Day
+11           Hour
+12    Day_of_Week
+13        quarter
+14  quarter_label
+15        Quarter
+16     date_label
+17            _id
+18        user_id
+19        message
+20       datetime
+21        channel
+22          point
+23        speaker
+24       provider
+25       language
+26           Year
+27          Month
+28           Week
+29            Day
+30           Hour
+31    Day_of_Week}
+2024-06-14 14:46:20 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:46:55 [INFO] Question: Show me this user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1" last 5 messages by date time.
+2024-06-14 14:46:55 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:46:55 [INFO] Prompt ID: 34899927-46ed-4ce4-93db-9f9a83be7cb0
+2024-06-14 14:46:55 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:47:28 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:47:28 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:47:28 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:47:31 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+662f5bf01d1916b256d78496,5KqOPQQVpuQ5gMeLAlWFYITGZ6r1,credits,209.0,2024-01-09 13:49:03,True,2680.0,2024,1,6,30,4,Sunday,2024Q1,Quarter 1 2024,1,2024-01-25
+665cad8c408d86244e8479af,9RpG1vYqxQSOHCsFs68CKiu4Caz2,pack_600,129.0,2024-05-28 10:36:16,True,189.0,2024,4,10,15,20,Saturday,2024Q1,Quarter 2 2024,2,2024-01-20
+65aca891b91e17e9baea041a,pVhcQJgpWsSTazvTIjF5V9VRPSH3,pack_2000,80.0,2024-02-06 21:58:29,True,307.0,2024,2,24,10,15,Thursday,2024Q2,Quarter 2 2024,2,2024-04-29
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+665dddb1d9a9b0191c57ba82,KW4y0E32fSh134jLScgb2aLzBDl2,แล้วสาเหตุอะไรที่ทำให้ขอนแก่นเติบโตอย่างรวดเร็วในภาคอีสาน,2024-03-10 18:02:46.370998,download,1834.0,83,nan,fil,2024,2,17,25,17,Sunday
+66084de5c8c16df47362be39,X9fS83eu9abjqlEHSU9osRjn8Ch2,"ทุ่นการผลิตที่ 2
+ความยาว 150 เมตร
+จำนวนแถวผลิตเสา 6 แถว ",2024-03-23 14:06:52.388406,download,544.0,41,canva,vi,2024,4,21,24,7,Saturday
+662d2bf689fafc27e43b8bf6,zhTfx3EOGxWEN9vinWWxgl7JP1p1,2จุด4การทำงานเป็นทีมการใช้และสร้างเครือข่ายทางวิชาการข้าพเจ้าได้เข้าร่วมกิจกรรมที่องค์กรวิชาชีพทั้งภายในและภายนอกองค์การจัดขึ้นเพื่อแลกเปลี่ยนเรียนรู้กับบุคคลในแวดวงอาชีพครูและแลกเปลี่ยนความรู้และร่วมกันพัฒนาสื่อการเรียนรู้ตลอดจนสร้างเครือข่ายการทางวิชาการในรูปแบบช่องทางต่างๆเพื่อแลกเปลี่ยนความรู้ในระหว่างองค์กร,2024-04-23 22:45:47.398607,download,260.0,vi_thuthuy333222,nan,en,2024,3,13,16,8,Friday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me this user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1" last 5 messages by date time.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:47:31 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:47:35 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:47:35 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+user_id = "QzJOQkPFJcQnSiARe4mR8s3z2Ez1"
+filtered_dfs = [df for df in dfs if user_id in df['user_id'].values]
+if filtered_dfs:
+    user_df = filtered_dfs[0]
+    user_messages = user_df.sort_values(by='datetime', ascending=False).head(5)
+
+    result = {
+        "type": "dataframe",
+        "value": user_messages
+    }
+else:
+    result = {
+        "type": "string",
+        "value": "User not found in the dataframes."
+    }
+            ```
+            
+2024-06-14 14:47:35 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:47:35 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:47:35 [INFO] 
+Code running:
+```
+user_id = 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'
+filtered_dfs = [df for df in dfs if user_id in df['user_id'].values]
+if filtered_dfs:
+    user_df = filtered_dfs[0]
+    user_messages = user_df.sort_values(by='datetime', ascending=False).head(5)
+    result = {'type': 'dataframe', 'value': user_messages}
+else:
+    result = {'type': 'string', 'value': 'User not found in the dataframes.'}
+        ```
+2024-06-14 14:47:35 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:47:36 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:47:36 [INFO] Answer: {'type': 'dataframe', 'value':                              _id                            user_id package_id  ...   quarter_label Quarter  date_label
+547745  666bba20408d86244e8480c9  Ue9d92e19c082c3e9a49d9e6377f4239a   pack_299  ...  Quarter 2 2024       2  2024-06-14
+547744  666bb593408d86244e8480c8  Uf53e4332a170530b0e67a37aea4a4f99   pack_299  ...  Quarter 2 2024       2  2024-06-14
+547742  666bb254408d86244e8480c3       oAGPVmR0VSTUqJ7DVjCUZpc1BCv1   pack_499  ...  Quarter 2 2024       2  2024-06-14
+547741  666badf8408d86244e8480c0       0VZYywS5AOgJPoBXzrqusJBvekg2   pack_299  ...  Quarter 2 2024       2  2024-06-14
+547740  666ba19d408d86244e8480bf       KwT05XAhQoZIayk85uokkNj3ftT2    pack_99  ...  Quarter 2 2024       2  2024-06-14
+
+[5 rows x 17 columns]}
+2024-06-14 14:47:36 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:49:09 [INFO] Question: Show me last 5 messages from user with user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1".
+2024-06-14 14:49:09 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:49:09 [INFO] Prompt ID: 9877d816-ded1-4706-b372-660dc1e52206
+2024-06-14 14:49:09 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:49:46 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:49:46 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:49:46 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:49:48 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+6596a8d22e0126e0a61fe45b,d6SqDzVnQPXvoo9d1MDQ8INjQuH2,Unlimited,11.0,2024-03-10 19:53:57,True,47.0,2024,6,11,20,22,Monday,2024Q1,Quarter 1 2024,2,2024-05-25
+65d7892dba33ae736703f6d7,Uccbe551bd34c2e92013dee25dca84e3e,credit,161.0,2024-03-26 11:47:40,True,4280.0,2024,4,19,9,0,Friday,2024Q2,Quarter 1 2024,1,2024-05-28
+65d63567c3dc036ce9367ff9,btGemBl2AWhAzW5sn3PGxIV1Jgb2,pack_600,299.0,2024-06-10 10:38:44,True,6080.0,2024,5,4,24,12,Sunday,2024Q1,Quarter 2 2024,1,2024-01-12
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65e27d13fb1a86b6ae4c3939,U4e0573849384af1f77939fb4fdc1bb14,สวัสดีค่ะฉันชื่อวรุณยุพาตั้งไพบูรณ์ทรัพย์เป็นนักเรียนโรงเรียนมงฟอร์ตวิทยาลัยชั้นม.3/6เลขที่17,2024-04-03 00:13:59.000000,download,188.0,id_chandra.irawan1889,canva,my,2024,3,23,31,15,Friday
+662a7303fa8255172b77a59f,T3PTY9079ZfKU8Vg6Vvgea7YY1u2,ด้านที่3ด้านการบริหารการเปลี่ยนแปลงและนวัตกรรมได้นำกลยุทธ์เปงโมเดลมาใช้ในการขับเคลื่อนการดำเนินงานยึดการบริหารแบบมีส่วนร่วมโดยคำนึงถึงประโยชน์และความคุ้มค่าของผู้เรียนเป็นสำคัญ,2024-05-17 13:33:29.374308,download,741.0,77,canva,ar,2024,6,12,26,17,Wednesday
+661f3a5db538440e45fae592,HhOCPE4x71gw5NQq4AgtJsyUwzy2,ประวัติการรับราชการ1เมษายน2552บรรจุเข้ารับราชการตำแหน่งครูผู้ช่วยโรงเรียนโคกสะอาดวิทยา1พฤศจิกายน2555สอบโอนย้ายมาดำรงตำแหน่งครูโรงเรียนบ้านขวดน้ำมัน18สิงหาคม2558ย้ายมาดำรงตำแหน่งครูโรงเรียนบ้านม่วงหอมสำนักงานสลากินแบ่งสงเคราะห์43,2024-03-13 12:14:04.779534,download,456.0,83,nan,km,2024,2,16,6,3,Tuesday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 5 messages from user with user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1".
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:49:48 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:49:51 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:49:51 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+dfs_filtered = [df[df['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail() for df in dfs]
+
+result = {"type": "dataframe", "value": pd.concat(dfs_filtered)}
+            ```
+            
+2024-06-14 14:49:51 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:49:51 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:49:51 [INFO] 
+Code running:
+```
+dfs_filtered = [df[df['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail() for df in dfs]
+result = {'type': 'dataframe', 'value': pd.concat(dfs_filtered)}
+        ```
+2024-06-14 14:49:51 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:49:52 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:49:52 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id package_id   price  ...   channel   speaker  provider  language
+543350   6621dcfdaac092e235a213c5  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543351   6621dd00923e21bccbc25e6e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543352   6621dda3923e21bccbc25e6f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543353   6621dda83f38f8578a814e3e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+545180   66463dba26025968d59da0db  QzJOQkPFJcQnSiARe4mR8s3z2Ez1    pack_99    99.0  ...       NaN       NaN       NaN       NaN
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download   nopchai       nan        th
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+
+[10 rows x 22 columns]}
+2024-06-14 14:49:52 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:50:49 [INFO] Question: Show me last 5 messages from user with user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1".
+2024-06-14 14:50:49 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:50:49 [INFO] Prompt ID: 18d56024-b2ff-4cd8-b0b2-91de84f9d16d
+2024-06-14 14:50:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:51:26 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:51:26 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:51:26 [INFO] Using cached response
+2024-06-14 14:51:26 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:51:26 [INFO] Executing Step 2: Skipping...
+2024-06-14 14:51:26 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:51:26 [INFO] Executing Step 3: Skipping...
+2024-06-14 14:51:26 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:51:26 [INFO] Executing Step 4: Skipping...
+2024-06-14 14:51:26 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:51:26 [INFO] 
+Code running:
+```
+dfs_filtered = [df[df['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail() for df in dfs]
+result = {'type': 'dataframe', 'value': pd.concat(dfs_filtered)}
+        ```
+2024-06-14 14:51:26 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:51:26 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:51:26 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id package_id   price  ...   channel   speaker  provider  language
+543350   6621dcfdaac092e235a213c5  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543351   6621dd00923e21bccbc25e6e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543352   6621dda3923e21bccbc25e6f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+543353   6621dda83f38f8578a814e3e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  1109.0  ...       NaN       NaN       NaN       NaN
+545180   66463dba26025968d59da0db  QzJOQkPFJcQnSiARe4mR8s3z2Ez1    pack_99    99.0  ...       NaN       NaN       NaN       NaN
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download   nopchai       nan        th
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN     NaN  ...  download  tonkhaow       nan        th
+
+[10 rows x 22 columns]}
+2024-06-14 14:51:26 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:52:01 [INFO] Question: Show me last 5 messages from user with user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1"in df_message.
+2024-06-14 14:52:01 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:52:01 [INFO] Prompt ID: b8a2efc8-0082-4cf6-a69c-3e8d768c6c62
+2024-06-14 14:52:01 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:52:37 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:52:37 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:52:37 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:52:39 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65ac4e029dc98d0fa65c868a,D1IxGiiPBZeIv9EIqTqpCInXUkx2,Unlimited,55.0,2024-01-25 09:22:10,True,65.0,2024,6,5,12,12,Sunday,2024Q2,Quarter 2 2024,1,2024-02-05
+65e86736441a13b3cb875095,onVsgyEaJKR4gU1uxDmkLrkUHxA2,pack_20000,29.0,2024-01-10 02:43:34,True,3720.0,2024,1,24,11,2,Saturday,2024Q1,Quarter 2 2024,2,2024-04-13
+6615f3af923e21bccbc25cb2,ecspSY7M81XXqkW8hLdCeib29882,pack_1299,16.0,2024-04-09 11:01:21,True,67.0,2024,2,10,21,10,Friday,2024Q2,Quarter 1 2024,1,2024-05-12
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+661f3b91a3958e3769a6110d,epUgO2PRE6hzhYvbg5sAz4yBfpI2,กระผมมีการปฏิบัติงานตามคำสั่งของผู้บังคับบัญชาอย่างเต็มความสามารถโดยมีหน้าที่หลักได้แก่1ครูผู้สอน2เจ้าหน้าที่งานพัสดุ3ดูแลงานประชาสัมพันธ์ของโรงเรียนและงานอื่นๆตามแต่ผู้บังคับบัญชาสั่งการซึ่งกระผมได้มีส่วนร่วมในการพัฒนาการศึกษาอย่างเต็มความสามารถ,2024-04-17 17:40:29.000000,download,743.0,km_phanii,canva,fil,2024,3,23,31,0,Saturday
+6620d454eb2aeb36c088bb6b,iwAHlzacYsUWwu05loMXFiNWmTH3,ปลาหมึกยักษ์ หรือ Octopus เป็นสัตว์ทะเลที่มีลักษณะพิเศษและน่าทึ่ง มีหนวดทั้งหมดแปดหนวด ซึ่งแต่ละหนวดสามารถเคลื่อนไหวได้อย่างอิสระ ปลาหมึกยักษ์มีความสามารถในการเปลี่ยนสีผิวและลวดลายเพื่อพรางตัวจากศัตรู นอกจากนี้ยังสามารถปล่อยหมึกดำเพื่อสร้างม่านบังตาเมื่อรู้สึกว่าถูกคุกคาม ปลาหมึกยักษ์มีสมองที่ซับซ้อนและสามารถแก้ไขปัญหาต่าง ๆ ได้อย่างชาญฉลาด มันยังเป็นที่รู้จักในเรื่องความสามารถในการเปิดขวดและหลุดพ้นจากที่กักขังอย่างน่าทึ่งอีกด้วย,2024-03-27 19:23:04.086988,download,72.0,prao,nan,en,2024,2,15,11,2,Tuesday
+6648a5f6e4ce78afc7af55ae,u592kFt2QlYM9ZFL3UN6DofB7vr1,buy	bought	bought,2024-03-04 15:15:07.971804,download,486.0,14,canva,de,2024,5,19,22,11,Thursday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 5 messages from user with user_id "QzJOQkPFJcQnSiARe4mR8s3z2Ez1"in df_message.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:52:39 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:52:43 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:52:43 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_message = dfs[0]  # Assuming the dataframe with messages is in the first element of the list dfs
+user_id = "QzJOQkPFJcQnSiARe4mR8s3z2Ez1"
+last_5_messages = df_message[df_message['user_id'] == user_id].tail(5)
+
+result = {"type": "dataframe", "value": last_5_messages}
+            ```
+            
+2024-06-14 14:52:43 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:52:43 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:52:43 [INFO] 
+Code running:
+```
+df_message = dfs[0]
+user_id = 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'
+last_5_messages = df_message[df_message['user_id'] == user_id].tail(5)
+result = {'type': 'dataframe', 'value': last_5_messages}
+        ```
+2024-06-14 14:52:43 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:52:43 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:52:43 [INFO] Answer: {'type': 'dataframe', 'value':                              _id                       user_id package_id  ...   quarter_label Quarter  date_label
+543350  6621dcfdaac092e235a213c5  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  ...  Quarter 2 2024       2  2024-04-19
+543351  6621dd00923e21bccbc25e6e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  ...  Quarter 2 2024       2  2024-04-19
+543352  6621dda3923e21bccbc25e6f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  ...  Quarter 2 2024       2  2024-04-19
+543353  6621dda83f38f8578a814e3e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  pack_1099  ...  Quarter 2 2024       2  2024-04-19
+545180  66463dba26025968d59da0db  QzJOQkPFJcQnSiARe4mR8s3z2Ez1    pack_99  ...  Quarter 2 2024       2  2024-05-17
+
+[5 rows x 17 columns]}
+2024-06-14 14:52:43 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:53:40 [INFO] Question: Show me last 5 messages in df_message.
+2024-06-14 14:53:40 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:53:40 [INFO] Prompt ID: 96126f62-bdf0-4ef5-b8ed-88e870f15720
+2024-06-14 14:53:40 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:54:15 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:54:15 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:54:15 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:54:18 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65c86b3473a3c3e6194a4874,OEfaseKiG9bvM0QD64nDk44eaZ03,pack_299,5.0,2024-02-18 13:37:12,True,60.0,2024,4,16,27,23,Monday,2024Q2,Quarter 1 2024,1,2024-04-09
+660289252adb7fdc7fe5555f,jR13dzMkscSIUQHpHBjytbcMA2X2,pack_750,77.0,2024-03-12 21:29:47,True,292.0,2024,6,7,28,6,Sunday,2024Q2,Quarter 2 2024,2,2024-01-26
+65dda87bfa23626453626dd6,Ua6c148c224806428ddbf55c86187632c,pack_2500,21.0,2024-02-14 20:58:28,True,4720.0,2024,3,1,6,3,Tuesday,2024Q1,Quarter 2 2024,1,2024-03-14
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65f0aabd48313e1e8d442056,HdIrif54HySjjLI3tQxEfIxfXxR2,หมวดที่๔การทำงานเป็นทีมข้าพเจ้าได้เข้าร่วมกิจกรรมที่องค์กรวิชาชีพทั้งภายในและนอกองค์กรจัดขึ้นเพื่อแลกเปลี่ยนเรียนรู้กับบุคคลในแวดวงอาชีพครูและข้าพเจ้านำหลักการทำงานเป็นทีมมาประยุกต์ใช้ในการจัดการเรียนการสอนพัฒนาความรู้และสื่อการสอนต่างๆให้เกิดกับผู้เรียน,2024-03-22 22:31:58.383230,download,400.0,blend10,nan,ko,2024,2,22,30,17,Wednesday
+6649e41c91820e2356fbd768,Ucc9d3f142f5d0bb242c4182ac2115cc0,มันอยู่ข้างๆพิพิธภัณฑ์,2024-04-11 20:40:42.912095,download,30.0,pridi,canva,ja,2024,6,23,20,22,Monday
+6619647cb3175e930d6e6c11,4LYhAH8TgCdEVZb7dxSZXfsNJPl2,ผลสัมฤทธิ์ทางการเรียน มีผลคะแนนการทดสอบแห่งชาติ อาที เอ็นที และโอเน็ต สูงกว่าระดับประเทศ,2024-03-15 17:03:18.295324,download,1762.0,19,canva,ar,2024,5,8,25,14,Thursday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 5 messages in df_message.
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:54:18 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:54:21 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:54:21 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_message = dfs[1]  # Assuming the DataFrame with messages is the second one in the list
+
+# Show last 5 messages
+last_5_messages = df_message.tail(5)
+
+result = {
+    "type": "dataframe",
+    "value": last_5_messages
+}
+            ```
+            
+2024-06-14 14:54:21 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:54:21 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:54:21 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+last_5_messages = df_message.tail(5)
+result = {'type': 'dataframe', 'value': last_5_messages}
+        ```
+2024-06-14 14:54:21 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:54:21 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:54:21 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id  ... Hour Day_of_Week
+4723530  666bbc209137a948d5e2b532  hrwsQ42u53aEpa0QI829Mloi9AT2  ...   10      Friday
+4723531  666bbc209137a948d5e2b531  hrwsQ42u53aEpa0QI829Mloi9AT2  ...   10      Friday
+4723532  666bbc209137a948d5e2b533  hrwsQ42u53aEpa0QI829Mloi9AT2  ...   10      Friday
+4723533  666bbc21487eac006a553c8f  Kc51RBj0ikal86ZCgwuaI5Zj9p12  ...   10      Friday
+4723535  666bbc221dfe022861d56c64  qMqzTLKOWcUf8kaUiNvNCo2GThC2  ...   10      Friday
+
+[5 rows x 15 columns]}
+2024-06-14 14:54:21 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:55:19 [INFO] Question: Show me last 5 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+2024-06-14 14:55:19 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:55:19 [INFO] Prompt ID: 4c5e959c-bcdf-46a3-a340-218f8688774e
+2024-06-14 14:55:19 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:55:56 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:55:56 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:55:56 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:55:58 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+66096d33923e21bccbc25936,Ue85a1ba4be0b99db956eb1425796fd35,pack_13500,151.0,2024-03-01 23:11:38,True,97500.0,2024,4,6,9,11,Friday,2024Q1,Quarter 2 2024,2,2024-05-27
+65befd14567381194454ce5a,iAKxrHG4Q8glZtZQz5hdxhPTXWB3,pack_10000,80.0,2024-01-21 10:35:10,True,333.0,2024,6,1,30,9,Monday,2024Q2,Quarter 1 2024,2,2024-01-06
+66111e65aac092e235a210cd,ZisJHv6aESdwsKvSnwBp3MHv16a2,pack_2000,2499.0,2024-04-03 08:45:42,True,3760.0,2024,1,10,11,16,Tuesday,2024Q2,Quarter 1 2024,1,2024-02-13
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65e3127d7c3c432b65372847,7M4mzyzjTsVYU4fb23sojvSjT7j1,..ละได้..ใจก็สะอาดวางได้..ใจก็โล่งปลงได้..ใจก็เย็นอภัยเป็น..ใจก็สงบ,2024-05-01 08:14:34.525609,download,1626.0,bo,nan,de,2024,2,11,8,12,Monday
+662a1ef465ed072196510cc9,kDG9TmSL6cSuftec0yvs8yC0rX83,ในตัว AI Grok ได้มีการลงทุนพัฒนาเพิ่มประสิทธิภาพให้แก่ผู้สมัครใช้งานให้เห็นถึงความคุ้มค่าที่ต้องจ่ายเพื่อใช้บริการ AI Grok เพิ่มความถูกต้องแม่นยำ ภาษาในการใช้ตอบคำถาม แสดงให้เห็นถึงประโยชน์ในการใช้งาน แอปพลิเคชั่นนี้เพิ่มมากขึ้น เพื่อเพิ่มฐานลูกค้า และความคุ้มค่า และเป็นการเจาะกลุ่มลูกค้าที่ให้ความสำคัญด้านข้อมูลที่มีความน่าเชื่อถือในการรับข้อมูลของการวิจัยในหัวข้อต่าง ๆ ของโลก,2024-03-27 20:59:59.579718,download,605.0,blend7,canva,ar,2024,4,8,3,14,Sunday
+65fd4a1ffbc49bd4e1f1e87c,Ucc3e5bf3bc89bda6660b72e7b0059dd9,"I built my dream business from the ground up. Great team, happy clients, solid processes. Now, I'm ready to take it further!",2024-04-10 13:33:09.664174,download,56.0,41,nan,zh,2024,3,14,7,20,Friday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 5 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:55:58 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:56:02 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:56:02 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_message = dfs[1]  # Assuming the dataframe with messages is in the second position of the list
+
+# Filter messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1
+user_messages = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1']
+
+# Get last 5 messages
+last_5_messages = user_messages.tail(5)
+
+result = {"type": "dataframe", "value": last_5_messages}
+            ```
+            
+2024-06-14 14:56:02 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:56:02 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:56:02 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+user_messages = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1']
+last_5_messages = user_messages.tail(5)
+result = {'type': 'dataframe', 'value': last_5_messages}
+        ```
+2024-06-14 14:56:02 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:56:03 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:56:03 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id                             message  ... Day Hour  Day_of_Week
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1                          ลองหน่อยนะ  ...   7   12       Friday
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  รีวิวจากนักวิ่งมืออาชีพเชื่อถือได้  ...   7   12       Friday
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1                              หวัดดี  ...  10   17       Monday
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1                              หวัดดี  ...  10   17       Monday
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1                              หวัดดี  ...  10   17       Monday
+
+[5 rows x 15 columns]}
+2024-06-14 14:56:03 [INFO] Executing Step 8: ResultParsing
+2024-06-14 14:56:34 [INFO] Question: Show me last 10 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+2024-06-14 14:56:34 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 14:56:34 [INFO] Prompt ID: de78c1d1-f1f0-427e-87f5-f233dd20fd79
+2024-06-14 14:56:34 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 14:57:06 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 14:57:06 [INFO] Executing Step 1: CacheLookup
+2024-06-14 14:57:06 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 14:57:08 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65f7abf68081a5ec429837a0,U9ec6c6e9a7db5f996e4d158eaa8f5ceb,pack_10000,12.0,2024-06-13 20:43:01,True,5400.0,2024,6,7,12,17,Wednesday,2024Q2,Quarter 2 2024,1,2024-05-23
+662e985e584752e5795d19f1,Xb9EA8TGXWbkDscdmBXIh9l87kq2,credit,51.0,2024-04-02 15:50:06,True,339.0,2024,3,11,29,15,Tuesday,2024Q1,Quarter 1 2024,2,2024-01-18
+65fa7f4e31ce77077826775d,Ud31e539aac3d3da9e3cef07c95c84228,pack_600,36.0,2024-03-06 00:04:20,True,9350.0,2024,2,16,16,10,Saturday,2024Q1,Quarter 2 2024,2,2024-03-02
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65e7dea6084efe2d6558b04e,QhsgncSMoYgp63w4RYDGfPp84Am2,โซนคลีนรูมภายในโซนของคลีนรูมจะมีการแต่งกายที่เหมือนกันกับโซนเฟอร์ไร๊คือการสวมใส่ชุดคลีนรูมแต่จะแตกต่างที่สีของชุดเช่นพนักงานระดับโอเปอร์เรเตอร์สวมชุดคลีนรูมสีฟ้าพนักงานระดับเมนเทอร์แน้นและหลีดเด้อสวมชุดคลีนรูมสีน้ำเงินเข้มในส่วนของสต๊าฟและการแต่งกายของแขกที่มาเยี่ยมชมภายในโรงงานเป็นชุดคลีนรูมสีขาวนอกจากนั้นต้องสวมรองเท้าคลีนรูมและผ้าปิดจมูกชนิดคลีนรูม,2024-03-24 09:52:24.498891,download,1131.0,16,nan,lo,2024,2,21,18,10,Thursday
+6653310ca395cb8994cf3c83,hLv1CBQZZQMin6AetgRZOdFb3Kf2,1.7จัดบรรยากาศที่ส่งเสริมและพัฒนาผู้เรียนมีการจัดบรรยากาศในชั้นเรียนที่ส่งเสริมการเรียนรู้คณิตศาสตร์และจัดกิจกรรมการเรียนรู้ที่หลากหลายเช่นการทำงานกลุ่มการทำชุดฝึกทักษะการเรียนผ่านเว็บไซต์ห้องเรียนออนไลน์การนำเสนอหน้าห้องเป็นต้น,2024-03-04 18:45:19.000000,download,471.0,66,canva,en,2024,6,16,3,0,Wednesday
+66526a3de4ce78afc7af6729,iQJ4Q2LKzEZIiniqzcM7CWlglG83,ที่รัดหัวขนาดกระทัดรัดปรับได้หลายระดับตามที่ต้องการ,2024-02-23 10:31:42.348622,download,1311.0,107,canva,de,2024,4,17,22,20,Sunday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 10 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 14:57:08 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 14:57:12 [INFO] Prompt used:
+            None
+            
+2024-06-14 14:57:12 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_message = dfs[1]  # Assuming the dataframe containing messages is in the second element of the list
+
+# Filter messages for user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 and get the last 10 messages
+filtered_messages = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(10)
+
+result = {"type": "dataframe", "value": filtered_messages}
+            ```
+            
+2024-06-14 14:57:12 [INFO] Executing Step 4: CachePopulation
+2024-06-14 14:57:12 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 14:57:12 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(10)
+result = {'type': 'dataframe', 'value': filtered_messages}
+        ```
+2024-06-14 14:57:12 [INFO] Executing Step 6: CodeExecution
+2024-06-14 14:57:13 [INFO] Executing Step 7: ResultValidation
+2024-06-14 14:57:13 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id  ... Hour Day_of_Week
+4545561  666299039137a948d5e29e30  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545562  666299039137a948d5e29e33  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545563  666299039137a948d5e29e37  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545564  666299039137a948d5e29e38  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545565  666299039137a948d5e29e2f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+
+[10 rows x 15 columns]}
+2024-06-14 14:57:13 [INFO] Executing Step 8: ResultParsing
+2024-06-14 15:10:38 [INFO] Question: Show me last 10 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+2024-06-14 15:10:38 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 15:10:38 [INFO] Prompt ID: 3a99d3c4-806c-4bed-b61d-80702abb21d4
+2024-06-14 15:10:38 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 15:10:56 [INFO] Question: Show me last 20 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+2024-06-14 15:10:56 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 15:10:56 [INFO] Prompt ID: 9a973e0b-9b3b-4c34-a5b0-76b368cfd6f7
+2024-06-14 15:10:56 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 15:12:05 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 15:12:05 [INFO] Executing Step 1: CacheLookup
+2024-06-14 15:12:05 [INFO] Using cached response
+2024-06-14 15:12:05 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 15:12:05 [INFO] Executing Step 2: Skipping...
+2024-06-14 15:12:05 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 15:12:05 [INFO] Executing Step 3: Skipping...
+2024-06-14 15:12:05 [INFO] Executing Step 4: CachePopulation
+2024-06-14 15:12:05 [INFO] Executing Step 4: Skipping...
+2024-06-14 15:12:05 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 15:12:05 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(10)
+result = {'type': 'dataframe', 'value': filtered_messages}
+        ```
+2024-06-14 15:12:05 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 15:12:05 [INFO] Executing Step 1: CacheLookup
+2024-06-14 15:12:05 [INFO] Executing Step 6: CodeExecution
+2024-06-14 15:12:07 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 15:12:07 [INFO] Executing Step 7: ResultValidation
+2024-06-14 15:12:07 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id  ... Hour Day_of_Week
+4545561  666299039137a948d5e29e30  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545562  666299039137a948d5e29e33  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545563  666299039137a948d5e29e37  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545564  666299039137a948d5e29e38  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545565  666299039137a948d5e29e2f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   12      Friday
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1  ...   17      Monday
+
+[10 rows x 15 columns]}
+2024-06-14 15:12:07 [INFO] Executing Step 8: ResultParsing
+2024-06-14 15:12:10 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65d5ca998a4d3424f7729ce6,Ub132096ba64ee8530deec8453e15a7cf,NoAds,121.0,2024-06-02 14:40:52,True,3160.0,2024,4,14,18,23,Wednesday,2024Q2,Quarter 1 2024,1,2024-05-24
+65f0368f441a13b3cb87560a,3h3XjirRFmQ8SHj87ADgVuRMnDw2,pack_20000,330.0,2024-03-14 10:28:46,True,320.0,2024,3,18,17,1,Friday,2024Q1,Quarter 1 2024,1,2024-04-02
+65fe9144da65edaae0bb6b6d,DikbEm02D9aDPUhQcc7jLAQhdvn2,Unlimited,123.0,2024-05-24 16:44:55,True,9.0,2024,5,23,10,8,Sunday,2024Q2,Quarter 2 2024,2,2024-05-15
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+664c44c21dfe022861d51ecf,6cYtHrHnH8Oo0rXVzvEqcGgzYQ83,5จิตวินยานความเป็นครูข้าพเจ้ามีความรักความสัดทาในวิชาชีพครูปฏิบัติหน้าที่ที่ได้รับมอบหมายอย่างเต็มความสามารถเต็มเวลามีความสนใจใส่ใจในการเรียนและความประพฤติของผู้เรียน,2024-04-20 13:41:29.000000,download,1235.0,my_meaowdum123,nan,my,2024,4,17,3,15,Sunday
+65eddd4401b27c4035abf856,kcgodvGtYJSqlauGECK2rYjcT2X2,ห้องสมุดประชาชนกับการส่งเสริมการเรียนรู้ตลอดชีวิต,2024-05-21 16:43:48.229259,download,735.0,lo_sounyyy1717,nan,de,2024,5,11,14,17,Thursday
+66383b8f487eac006a54bbee,GtkT4iC6T3MIuSyXhZ1RbTSWdYk2,สามจุดแข็งหรือเรื่องที่ทำได้ดีตรงตัวเลยนะครับให้เขียนจุดแข็งของตนเองหรือเรื่องที่ตนเองทำได้ดีสี่เรื่องที่ยังต้องพัฒนาจากแคเรียแอสปายเรชั่นนั้นให้เราเขียนหัวข้อที่เรายังต้องพัฒนาห้าแผนการพัฒนาหรือเรียกว่าเดวาล็อปเม้นแพลนซึ่งการวางแผนการพัฒนาของเราจะวางแผนตามแบบโมเดลเจ็ดสิบยี่สิบสิบและการวางแผนให้ได้ประสิทธิภาพนั้นดีอย่างไรอย่างแรกเลยจะทำให้เราสามารถลงมือทำได้จริงมีแนวทางในการปฏิบัติมีกรอบเวลาในการปฏิบัติและการติดตามได้อย่างต่อเนื่องสิ่งสำคัญของแผนพัฒนาคือการลงมือทำเพราะถ้าวางแผนแล้วเราไม่ลงมือเราก็จะไม่ได้พัฒนาอะไรเลยดังนั้นวางแผนแล้วจะต้องลงมือทำให้ได้นะครับทุกคนทีนี้เรามาเริ่มวางแผนกันเลยดีกว่าเริ่มจากเรามาดูกันก่อนว่าตามแบบฟอร์มเราต้องต้องกรอกอะไรลงไปบ้างหนึ่งหัวข้อที่จะพัฒนาสองประเภทการพัฒนาสามรูปแบบการพัฒนาสี่กิจกรรมการพัฒนาห้าผู้รับผิดชอบหกระยะเวลาในการพัฒนาเจ็ดวิธีการวัดผลแปดผลการพัฒนา,2024-02-27 00:11:07.000000,download,665.0,154,canva,vi,2024,3,12,9,22,Wednesday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Show me last 20 messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1 in df_message .
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 15:12:10 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 15:12:15 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:12:15 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+# Filter messages of user QzJOQkPFJcQnSiARe4mR8s3z2Ez1
+df_messages_filtered = pd.concat([dfs[0], dfs[1]])  # Concatenate both dataframes
+df_messages_filtered = df_messages_filtered[df_messages_filtered['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1']  # Filter messages of the specific user
+last_20_messages = df_messages_filtered.tail(20)  # Get the last 20 messages
+
+result = {"type": "dataframe", "value": last_20_messages}
+            ```
+            
+2024-06-14 15:12:15 [INFO] Executing Step 4: CachePopulation
+2024-06-14 15:12:15 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 15:12:15 [INFO] 
+Code running:
+```
+df_messages_filtered = pd.concat([dfs[0], dfs[1]])
+df_messages_filtered = df_messages_filtered[df_messages_filtered['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1']
+last_20_messages = df_messages_filtered.tail(20)
+result = {'type': 'dataframe', 'value': last_20_messages}
+        ```
+2024-06-14 15:12:15 [INFO] Executing Step 6: CodeExecution
+2024-06-14 15:13:04 [INFO] Executing Step 7: ResultValidation
+2024-06-14 15:13:04 [INFO] Answer: {'type': 'dataframe', 'value':                               _id                       user_id package_id  price  ...   channel   speaker  provider  language
+4545548  666298edd9a9b0191c57c696  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545549  666298edd9a9b0191c57c693  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545550  666298edd9a9b0191c57c694  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545551  666298edd9a9b0191c57c695  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545552  666298edd9a9b0191c57c697  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545556  666299039137a948d5e29e2e  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download       pla       nan        th
+4545557  666299039137a948d5e29e31  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download       pla       nan        th
+4545558  666299039137a948d5e29e32  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545559  666299039137a948d5e29e35  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545560  666299039137a948d5e29e36  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545561  666299039137a948d5e29e30  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download       pla       nan        th
+4545562  666299039137a948d5e29e33  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545563  666299039137a948d5e29e37  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545564  666299039137a948d5e29e38  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download   nopchai       nan        th
+4545565  666299039137a948d5e29e2f  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download       pla       nan        th
+4545566  666299039137a948d5e29e34  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4545567  666299039137a948d5e29e39  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download   nopchai       nan        th
+4623619  6666d49e91820e2356fc19d0  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4623666  6666d5001dfe022861d55e92  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+4623674  6666d515d9a9b0191c57d00b  QzJOQkPFJcQnSiARe4mR8s3z2Ez1        NaN    NaN  ...  download  tonkhaow       nan        th
+
+[20 rows x 22 columns]}
+2024-06-14 15:13:04 [INFO] Executing Step 8: ResultParsing
+2024-06-14 15:21:49 [INFO] Question: Follow these steps
+1. select 100 latest rows with user 'xxxx' from "df_message"
+2. look in to "message" column and summarize the most relevant topic of these 100 rows
+2024-06-14 15:21:49 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 15:21:49 [INFO] Prompt ID: b1890bed-5fcc-494a-adc3-e8c8261af9e3
+2024-06-14 15:21:49 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 15:22:39 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 15:22:39 [INFO] Executing Step 1: CacheLookup
+2024-06-14 15:22:39 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 15:22:39 [INFO] Question: Follow these steps
+1. select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+2. look in to "message" column and summarize the most relevant topic of these 100 rows
+2024-06-14 15:22:39 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 15:22:39 [INFO] Prompt ID: 8f775e26-0036-4949-b253-5279ac7f9cd5
+2024-06-14 15:22:39 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 15:22:46 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65c48847be996cd23f9ba817,Ua44e1ce2dab2a3460cff04aa528fde55,pack_13500,15.0,2024-06-04 11:35:49,True,245.0,2024,3,23,10,6,Wednesday,2024Q2,Quarter 2 2024,1,2024-03-18
+6597ebfcb44e4523549c0bd8,CaKSb4EaLNMvqmzASFj2ViLfUgE2,credits,111.0,2024-05-07 17:51:15,True,1880.0,2024,5,22,13,10,Sunday,2024Q2,Quarter 1 2024,1,2024-06-01
+65aba554ef18763c917402fc,np1zZUHIQfW62nBBjtsJMFS27BI3,pack_1099,299.0,2024-01-03 02:18:34,True,74.0,2024,2,7,25,16,Thursday,2024Q1,Quarter 1 2024,2,2024-01-06
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+661ff8f5a3958e3769a6134e,U5a6028f1dcae413344a5d27d143ceafa,จากจุดชมวิวนี้อยู่เจ้าจะสามารถเล็งกานอนได้อย่างแม่นยำและเมื่อถึงเวลาอันเหมาะสมจงปลดปล่อยพลังทั้งหมดที่มีใส่เขา!,2024-05-13 23:30:25.798537,download,678.0,80,canva,ar,2024,4,11,20,22,Friday
+66239fed65ed07219650f939,U1b792e0702630a0db6965802b37526f7,เมื่อวันที่20พฤษภาคม2567เวลา13.30น.ผู้ว่าราชการจังหวัดระยองมอบหมายกลุ่มงานศูนย์ดำรงธรรมจังหวัดระยองลงพื้นที่ตรวจสอบข้อเท็จจริงร่วมกับหน่วยงานที่เกี่ยวข้องกรณีได้รับเรื่องร้องเรียนจากชาวบ้านว่ามีการปล่อยน้ำเสียจากบ่อบำบัดโรงงานบริษัทเบสท์เพอฟอร์แมนซ์เอ็นจิเนียริ่งจำกัดตั้งอยู่ที่หมู่ที่1ตำบลมะขามคู่อำเภอนิคมพัฒนาจังหวัดระยองซึมเข้าที่ชาวบ้านเป็นเหตุให้ปลาในบ่อตายเป็นจำนวนมากและมีกลิ่นเหม็นสารเคมีจากการตรวจสอบเบื้องต้นพบว่าในบริเวณพื้นที่ใกล้เคียงติดกับบ่อปลาของผู้ร้องมีโรงงานเบสท์เพอฟอร์แมนซ์และสถานประกอบการขนาดกลางที่ไม่เข้าข่ายโรงงานผลิตชิ้นส่วนอลูมิเนียมสำหรับประกอบเต็นท์ขนาดใหญ่และชิ้นส่วนไฟเบอร์ซึ่งมีการใช้สารเคมีในกระบวนการผลิตหลายประเภทและมีบ่อชะล้างสารเคมีซึ่งอยู่ใกล้กับบ่อปลาของผู้ร้องด้วยเช่นกันดังนั้นหน่วยงานที่เกี่ยวข้องจึงต้องมีการตรวจสอบอย่างละเอียดโดยการตรวจวัดค่าน้ำและตรวจสอบการรั่วซึมของน้ำจากสถานประกอบการทั้งสองแห่งเพื่อหาสาเหตุการตายของปลาต่อไป,2024-05-19 13:51:06.039063,download,897.0,79,nan,ja,2024,6,13,14,6,Wednesday
+6604e789d6c262fb2f2ffafc,YLqAaphPLIgtBW7RXCe36Kl2MGA3,จำนวนนักเรียนปี2567,2024-06-11 02:15:54.183961,download,1928.0,82,canva,nan,2024,3,14,6,4,Tuesday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Follow these steps
+1. select 100 latest rows with user 'xxxx' from "df_message"
+2. look in to "message" column and summarize the most relevant topic of these 100 rows
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 15:22:48 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 15:22:55 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:22:56 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+df_message = dfs[1]  # Assuming the dataframe with messages is in the second position of the list
+
+# Select 100 latest rows with user 'xxxx' from "df_message"
+filtered_messages = df_message[df_message['user_id'] == 'xxxx'].tail(100)
+
+# Summarize the most relevant topic of these 100 rows
+relevant_topics = filtered_messages['message'].value_counts().idxmax()
+
+result = {
+    "type": "string",
+    "value": f"The most relevant topic among the 100 latest rows for user 'xxxx' is: {relevant_topics}"
+}
+            ```
+            
+2024-06-14 15:22:56 [INFO] Executing Step 4: CachePopulation
+2024-06-14 15:22:58 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 15:22:58 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'xxxx'].tail(100)
+relevant_topics = filtered_messages['message'].value_counts().idxmax()
+result = {'type': 'string', 'value': f"The most relevant topic among the 100 latest rows for user 'xxxx' is: {relevant_topics}"}
+        ```
+2024-06-14 15:22:58 [INFO] Executing Step 6: CodeExecution
+2024-06-14 15:23:07 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 3, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/series.py", line 2564, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/base.py", line 655, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/nanops.py", line 93, in _f
+    return f(*args, **kwargs)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/nanops.py", line 1104, in nanargmax
+    result = values.argmax(axis)  # type: ignore[var-annotated]
+ValueError: attempt to get argmax of an empty sequence
+
+2024-06-14 15:23:07 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-06-14 15:23:07 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-06-14 15:23:07 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-06-14 15:23:08 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65c48847be996cd23f9ba817,Ua44e1ce2dab2a3460cff04aa528fde55,pack_13500,15.0,2024-06-04 11:35:49,True,245.0,2024,3,23,10,6,Wednesday,2024Q2,Quarter 2 2024,1,2024-03-18
+6597ebfcb44e4523549c0bd8,CaKSb4EaLNMvqmzASFj2ViLfUgE2,credits,111.0,2024-05-07 17:51:15,True,1880.0,2024,5,22,13,10,Sunday,2024Q2,Quarter 1 2024,1,2024-06-01
+65aba554ef18763c917402fc,np1zZUHIQfW62nBBjtsJMFS27BI3,pack_1099,299.0,2024-01-03 02:18:34,True,74.0,2024,2,7,25,16,Thursday,2024Q1,Quarter 1 2024,2,2024-01-06
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+661ff8f5a3958e3769a6134e,U5a6028f1dcae413344a5d27d143ceafa,จากจุดชมวิวนี้อยู่เจ้าจะสามารถเล็งกานอนได้อย่างแม่นยำและเมื่อถึงเวลาอันเหมาะสมจงปลดปล่อยพลังทั้งหมดที่มีใส่เขา!,2024-05-13 23:30:25.798537,download,678.0,80,canva,ar,2024,4,11,20,22,Friday
+66239fed65ed07219650f939,U1b792e0702630a0db6965802b37526f7,เมื่อวันที่20พฤษภาคม2567เวลา13.30น.ผู้ว่าราชการจังหวัดระยองมอบหมายกลุ่มงานศูนย์ดำรงธรรมจังหวัดระยองลงพื้นที่ตรวจสอบข้อเท็จจริงร่วมกับหน่วยงานที่เกี่ยวข้องกรณีได้รับเรื่องร้องเรียนจากชาวบ้านว่ามีการปล่อยน้ำเสียจากบ่อบำบัดโรงงานบริษัทเบสท์เพอฟอร์แมนซ์เอ็นจิเนียริ่งจำกัดตั้งอยู่ที่หมู่ที่1ตำบลมะขามคู่อำเภอนิคมพัฒนาจังหวัดระยองซึมเข้าที่ชาวบ้านเป็นเหตุให้ปลาในบ่อตายเป็นจำนวนมากและมีกลิ่นเหม็นสารเคมีจากการตรวจสอบเบื้องต้นพบว่าในบริเวณพื้นที่ใกล้เคียงติดกับบ่อปลาของผู้ร้องมีโรงงานเบสท์เพอฟอร์แมนซ์และสถานประกอบการขนาดกลางที่ไม่เข้าข่ายโรงงานผลิตชิ้นส่วนอลูมิเนียมสำหรับประกอบเต็นท์ขนาดใหญ่และชิ้นส่วนไฟเบอร์ซึ่งมีการใช้สารเคมีในกระบวนการผลิตหลายประเภทและมีบ่อชะล้างสารเคมีซึ่งอยู่ใกล้กับบ่อปลาของผู้ร้องด้วยเช่นกันดังนั้นหน่วยงานที่เกี่ยวข้องจึงต้องมีการตรวจสอบอย่างละเอียดโดยการตรวจวัดค่าน้ำและตรวจสอบการรั่วซึมของน้ำจากสถานประกอบการทั้งสองแห่งเพื่อหาสาเหตุการตายของปลาต่อไป,2024-05-19 13:51:06.039063,download,897.0,79,nan,ja,2024,6,13,14,6,Wednesday
+6604e789d6c262fb2f2ffafc,YLqAaphPLIgtBW7RXCe36Kl2MGA3,จำนวนนักเรียนปี2567,2024-06-11 02:15:54.183961,download,1928.0,82,canva,nan,2024,3,14,6,4,Tuesday
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Follow these steps
+1. select 100 latest rows with user 'xxxx' from "df_message"
+2. look in to "message" column and summarize the most relevant topic of these 100 rows
+
+You generated this python code:
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'xxxx'].tail(100)
+relevant_topics = filtered_messages['message'].value_counts().idxmax()
+result = {'type': 'string', 'value': f"The most relevant topic among the 100 latest rows for user 'xxxx' is: {relevant_topics}"}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 3, in <module>
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/series.py", line 2564, in idxmax
+    i = self.argmax(axis, skipna, *args, **kwargs)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/base.py", line 655, in argmax
+    return nanops.nanargmax(  # type: ignore[return-value]
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/nanops.py", line 93, in _f
+    return f(*args, **kwargs)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandas/core/nanops.py", line 1104, in nanargmax
+    result = values.argmax(axis)  # type: ignore[var-annotated]
+ValueError: attempt to get argmax of an empty sequence
+
+
+Fix the python code above and return the new python code:
+2024-06-14 15:23:08 [INFO] Executing Step 1: CodeGenerator
+2024-06-14 15:23:13 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:23:13 [INFO] Code generated:
+            ```
+            import pandas as pd
+
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'xxxx'].tail(100)
+
+if not filtered_messages.empty:
+    relevant_topics = filtered_messages['message'].value_counts().idxmax()
+    result = {'type': 'string', 'value': f"The most relevant topic among the 100 latest rows for user 'xxxx' is: {relevant_topics}"}
+else:
+    result = {'type': 'string', 'value': "No messages found for user 'xxxx'"}
+
+result
+            ```
+            
+2024-06-14 15:23:13 [INFO] Executing Step 2: CodeCleaning
+2024-06-14 15:23:13 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+filtered_messages = df_message[df_message['user_id'] == 'xxxx'].tail(100)
+if not filtered_messages.empty:
+    relevant_topics = filtered_messages['message'].value_counts().idxmax()
+    result = {'type': 'string', 'value': f"The most relevant topic among the 100 latest rows for user 'xxxx' is: {relevant_topics}"}
+else:
+    result = {'type': 'string', 'value': "No messages found for user 'xxxx'"}
+result
+        ```
+2024-06-14 15:23:15 [INFO] Executing Step 7: ResultValidation
+2024-06-14 15:23:16 [INFO] Answer: {'type': 'string', 'value': "No messages found for user 'xxxx'"}
+2024-06-14 15:23:17 [INFO] Executing Step 8: ResultParsing
+2024-06-14 15:23:19 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 15:23:19 [INFO] Executing Step 1: CacheLookup
+2024-06-14 15:23:19 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 15:23:22 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+65a534c1872d0e66bd7b4ef0,MKA2JXtp67gvLLXQUaxMFc1P9Xe2,pack_1699,91.0,2024-04-06 17:05:25,True,209.0,2024,4,15,2,18,Friday,2024Q1,Quarter 2 2024,1,2024-04-11
+65ec16162f7f07dd26100d8f,Udbf8278deaa85a7cd1d58cf590016a5d,pack_10000,116.0,2024-05-22 15:54:36,True,6040.0,2024,3,1,9,1,Monday,2024Q2,Quarter 1 2024,2,2024-02-20
+66669f60408d86244e847e4a,aw1PKCCIKPaAXhV4NaSE47lInJk2,NoAds,79.0,2024-05-24 02:19:17,True,78.0,2024,1,23,25,12,Thursday,2024Q1,Quarter 2 2024,1,2024-01-23
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+66066c50a3958e3769a5d87e,Ua3ab940c2110248197f49312f8256ba3,ด้วยความห่วงใยให้บริการด้วยใจเเก่ผู้เสียหายจึงเกิดความทรงจำอันดีจากผู้เสียหายถึงสถานคุ้มครองสวัสดิภาพผู้เสียหายจากการค้ามนุษย์,2024-04-18 23:57:28.078334,download,316.0,id_ari,nan,ja,2024,3,16,20,7,Monday
+65f8f91f3df43a669141a14d,MZ7RM0unIKV8nAqmbc1JOUvY7C23,ขั้นที่4สังเกตและบรรยายนักเรียนร่วมกันสังเกตและบรรยายการทดลองกรองน้ำ,2024-04-19 10:23:27.421634,download,42.0,id_sarahzafiraa,nan,lo,2024,6,24,4,22,Thursday
+666101ed7f3651c60c8b0be7,6p1fv7yl2oV9v1XY1hxxXU3J3vC3,ก่อนจะซื้อแป้งพัฟต้องดูตัวนี้เลยค่ะทุกคนดูผลลัพธ์สิมันน่าทึ่งมากเลยนะคะเพื่อนๆถ้าอยากได้แป้งพัฟดีๆต้องเลือกไทล์-เลม-เม่แป้งพัฟสองชั้นที่ออกแบบสำหรับคนเอเชียโดยเฉพาะเนื้อแป้งละเอียดจนแทบมองไม่เห็นและยังมีส่วนผสมของเอสเซนส์บำรุงผิวแต่งหน้าไปด้วยบำรุงผิวไปด้วยเพื่อนๆที่หน้ามันและเครื่องสำอางหลุดง่ายแป้งพัฟไทล์-เลม-เม่สามารถแก้ปัญหาได้ง่ายๆหรือเพื่อนๆที่มีรอยหรือหลุมบนใบหน้าแป้งพัฟนี้ก็สามารถปกปิดได้อย่างง่ายดายสีหน้ากับคอไม่สม่ำเสมอก็แก้ไขได้อย่างง่ายดายไม่ว่าผิวของคุณจะเป็นแบบไหนใช้เทคนิคแบบไหนแป้งพัฟนี้ไม่ทำให้หนาหรือเป็นคราบเพื่อนๆที่ผิวแห้งก็สามารถใช้ซ้ำได้อย่างสบายแป้งพัฟทั่วไปยิ่งเติมยิ่งเหลืองและผิวไม่เรียบแต่แป้งพัฟไทล์-เลม-เม่ใช้เทคโนโลยีเฉพาะทำให้บางเบาและให้ผลลัพธ์ที่ดีกว่าและยังเรียบเนียนอีกด้วย,2024-03-18 18:12:43.667953,download,481.0,61,canva,ko,2024,4,19,22,19,Tuesday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Follow these steps
+1. select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+2. look in to "message" column and summarize the most relevant topic of these 100 rows
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 15:23:22 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 15:23:28 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:23:28 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+df_selected = dfs[1][dfs[1]['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+
+# Summarize the most relevant topic of these 100 rows in the "message" column
+# For this example, let's say we will analyze the topics using a simple word frequency count
+words_freq = {}
+for message in df_selected['message']:
+    words = message.split()
+    for word in words:
+        if word in words_freq:
+            words_freq[word] += 1
+        else:
+            words_freq[word] = 1
+
+most_common_word = max(words_freq, key=words_freq.get)
+
+result = {
+    "type": "string",
+    "value": f"The most common word in the messages of the 100 selected rows is '{most_common_word}'."
+}
+            ```
+            
+2024-06-14 15:23:28 [INFO] Executing Step 4: CachePopulation
+2024-06-14 15:23:28 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 15:23:28 [INFO] 
+Code running:
+```
+df_selected = dfs[1][dfs[1]['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+words_freq = {}
+for message in df_selected['message']:
+    words = message.split()
+    for word in words:
+        if word in words_freq:
+            words_freq[word] += 1
+        else:
+            words_freq[word] = 1
+most_common_word = max(words_freq, key=words_freq.get)
+result = {'type': 'string', 'value': f"The most common word in the messages of the 100 selected rows is '{most_common_word}'."}
+        ```
+2024-06-14 15:23:28 [INFO] Executing Step 6: CodeExecution
+2024-06-14 15:23:28 [INFO] Executing Step 7: ResultValidation
+2024-06-14 15:23:28 [INFO] Answer: {'type': 'string', 'value': "The most common word in the messages of the 100 selected rows is 'ทดสอบนะ'."}
+2024-06-14 15:23:28 [INFO] Executing Step 8: ResultParsing
+2024-06-14 15:24:14 [INFO] Question: Follow these steps
+1. select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+2. look in to "message" column and summarize top 3 most relevant topic of these 100 rows
+2024-06-14 15:24:14 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-14 15:24:14 [INFO] Prompt ID: 24129ab8-6f4d-45fc-a8ad-44e34bb422d8
+2024-06-14 15:24:14 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-14 15:24:51 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-14 15:24:51 [INFO] Executing Step 1: CacheLookup
+2024-06-14 15:24:51 [INFO] Executing Step 2: PromptGeneration
+2024-06-14 15:24:54 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+6601b2709e06ff5c62b9a173,1h3rWzQpKzRSPqy5A3tMN19WVtQ2,Pro,52.0,2024-01-15 17:25:37,True,2000.0,2024,4,14,4,10,Saturday,2024Q1,Quarter 2 2024,1,2024-06-14
+6649c31afeeac66167b2bd31,YOpjXX9azRWD76dJE9i1baPAmQs2,pack_750,4999.0,2024-06-06 12:56:03,True,400.0,2024,6,13,21,6,Thursday,2024Q2,Quarter 1 2024,2,2024-04-10
+65c31f60e44e709efd88304c,l4ZKMP4AqNTpsG82PIzL5qUGNHP2,pack_499,73.0,2024-05-28 11:56:26,True,104.0,2024,1,18,12,3,Monday,2024Q2,Quarter 2 2024,2,2024-05-09
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65faf5df0bad9ba8884f9bc0,U8bbaa8921dcf4fd163b21763fa95fd63,"พัมคิน ครบ คุ้ม ทุกเรื่องเครื่องมือช่างระดับมืออาชีพ ไม่ว่าจะเป็น ช่างไม้ ไฟฟ้า ประปา คาร์แคร์ ช่างแอร์ ช่างเหล็ก งานเล็ก งานใหญ่
+ครบทุกเครื่องมือที่ใช่  คุ้มค่าสำหรับช่างไทยมืออาชีพ
+หาซื้อได้แล้วที่ บางเทาค้าวัสดุ",2024-03-29 08:31:39.164501,download,948.0,7,nan,de,2024,4,15,17,10,Thursday
+6632f74e4792902a8b2cc0ff,0WAtTpLBbNROtOkmBmISFnjtKmi1,แซดคอม  เว็บโฮสติ้ง,2024-03-14 22:20:06.000000,download,666.0,37,canva,my,2024,3,12,19,14,Monday
+65d81b11f6ee191eeaae7fe5,6ilSAuxRS9hx84RytPym6oLRc9v2,หากผลคัดกรองผิดปกติทำอย่างไรโดยภาวะพร่องฮอร์โมนไทรอยด์แต่กำเนิดหากผลคัดกรองผิดปกติหน่วยบริการจะติดตามทารกให้มารับการตรวจยืนยันและให้ยาไทรอกซินภายในอายุไม่เกิน14วันและโรคฟีนิลคีโตนูเรียหากผลคัดกรองผิดปกติหน่วยบริการจะติดตามทารกเพื่อตรวจยืนยันที่ศูนย์การดูแลผู้ป่วยโรคหายากโดยกรณีเร่งด่วนมากจะตามทารกรับการประเมินภายใน24ชม.กรณีเร่งด่วนปานกลางตามทารกรับการประเมินภายใน48ชม.โดยผลผิดปกติควรได้รับการรักษาเร่งด่วนภายในอายุไม่เกิน7วัน,2024-03-25 19:20:45.229729,download,340.0,max,nan,ko,2024,5,13,16,9,Saturday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Follow these steps
+1. select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+2. look in to "message" column and summarize top 3 most relevant topic of these 100 rows
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-14 15:24:54 [INFO] Executing Step 3: CodeGenerator
+2024-06-14 15:25:04 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:25:04 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+
+# Select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+df_selected = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+
+# Extract messages for topic modeling
+messages = df_selected['message']
+
+# Perform topic modeling using Latent Dirichlet Allocation
+vectorizer = CountVectorizer(max_features=1000, stop_words='english')
+messages_vectorized = vectorizer.fit_transform(messages)
+lda_model = LatentDirichletAllocation(n_components=3, random_state=42)
+topics = lda_model.fit_transform(messages_vectorized)
+
+# Get the top words for each topic
+feature_names = vectorizer.get_feature_names_out()
+topic_words = {}
+for topic_idx, topic in enumerate(lda_model.components_):
+    top_features_ind = topic.argsort()[:-10 - 1:-1]
+    top_features = [feature_names[i] for i in top_features_ind]
+    topic_words[f'Topic {topic_idx+1}'] = top_features
+
+# Summarize the top 3 most relevant topics
+top_topics = {k: v for k, v in sorted(topic_words.items(), key=lambda item: len(item[1]), reverse=True)[:3]}
+
+# Declare result var
+result = {"type": "string", "value": f"Top 3 most relevant topics:\n{top_topics}"}
+            ```
+            
+2024-06-14 15:25:04 [INFO] Executing Step 4: CachePopulation
+2024-06-14 15:25:04 [INFO] Executing Step 5: CodeCleaning
+2024-06-14 15:25:04 [INFO] 
+Code running:
+```
+df_selected = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+messages = df_selected['message']
+vectorizer = CountVectorizer(max_features=1000, stop_words='english')
+messages_vectorized = vectorizer.fit_transform(messages)
+lda_model = LatentDirichletAllocation(n_components=3, random_state=42)
+topics = lda_model.fit_transform(messages_vectorized)
+feature_names = vectorizer.get_feature_names_out()
+topic_words = {}
+for topic_idx, topic in enumerate(lda_model.components_):
+    top_features_ind = topic.argsort()[:-10 - 1:-1]
+    top_features = [feature_names[i] for i in top_features_ind]
+    topic_words[f'Topic {topic_idx + 1}'] = top_features
+top_topics = {k: v for k, v in sorted(topic_words.items(), key=lambda item: len(item[1]), reverse=True)[:3]}
+result = {'type': 'string', 'value': f"""Top 3 most relevant topics:
+{top_topics}"""}
+        ```
+2024-06-14 15:25:04 [INFO] Executing Step 6: CodeExecution
+2024-06-14 15:25:05 [ERROR] Failed with error: Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'df_message' is not defined
+
+2024-06-14 15:25:05 [WARNING] Failed to execute code retrying with a correction framework [retry number: 1]
+2024-06-14 15:25:05 [INFO] Executing Pipeline: ErrorCorrectionPipeline
+2024-06-14 15:25:05 [INFO] Executing Step 0: ErrorPromptGeneration
+2024-06-14 15:25:05 [INFO] Using prompt: <dataframe>
+dfs[0]:14764x17
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,date_label
+6601b2709e06ff5c62b9a173,1h3rWzQpKzRSPqy5A3tMN19WVtQ2,Pro,52.0,2024-01-15 17:25:37,True,2000.0,2024,4,14,4,10,Saturday,2024Q1,Quarter 2 2024,1,2024-06-14
+6649c31afeeac66167b2bd31,YOpjXX9azRWD76dJE9i1baPAmQs2,pack_750,4999.0,2024-06-06 12:56:03,True,400.0,2024,6,13,21,6,Thursday,2024Q2,Quarter 1 2024,2,2024-04-10
+65c31f60e44e709efd88304c,l4ZKMP4AqNTpsG82PIzL5qUGNHP2,pack_499,73.0,2024-05-28 11:56:26,True,104.0,2024,1,18,12,3,Monday,2024Q2,Quarter 2 2024,2,2024-05-09
+</dataframe>
+<dataframe>
+dfs[1]:596398x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+65faf5df0bad9ba8884f9bc0,U8bbaa8921dcf4fd163b21763fa95fd63,"พัมคิน ครบ คุ้ม ทุกเรื่องเครื่องมือช่างระดับมืออาชีพ ไม่ว่าจะเป็น ช่างไม้ ไฟฟ้า ประปา คาร์แคร์ ช่างแอร์ ช่างเหล็ก งานเล็ก งานใหญ่
+ครบทุกเครื่องมือที่ใช่  คุ้มค่าสำหรับช่างไทยมืออาชีพ
+หาซื้อได้แล้วที่ บางเทาค้าวัสดุ",2024-03-29 08:31:39.164501,download,948.0,7,nan,de,2024,4,15,17,10,Thursday
+6632f74e4792902a8b2cc0ff,0WAtTpLBbNROtOkmBmISFnjtKmi1,แซดคอม  เว็บโฮสติ้ง,2024-03-14 22:20:06.000000,download,666.0,37,canva,my,2024,3,12,19,14,Monday
+65d81b11f6ee191eeaae7fe5,6ilSAuxRS9hx84RytPym6oLRc9v2,หากผลคัดกรองผิดปกติทำอย่างไรโดยภาวะพร่องฮอร์โมนไทรอยด์แต่กำเนิดหากผลคัดกรองผิดปกติหน่วยบริการจะติดตามทารกให้มารับการตรวจยืนยันและให้ยาไทรอกซินภายในอายุไม่เกิน14วันและโรคฟีนิลคีโตนูเรียหากผลคัดกรองผิดปกติหน่วยบริการจะติดตามทารกเพื่อตรวจยืนยันที่ศูนย์การดูแลผู้ป่วยโรคหายากโดยกรณีเร่งด่วนมากจะตามทารกรับการประเมินภายใน24ชม.กรณีเร่งด่วนปานกลางตามทารกรับการประเมินภายใน48ชม.โดยผลผิดปกติควรได้รับการรักษาเร่งด่วนภายในอายุไม่เกิน7วัน,2024-03-25 19:20:45.229729,download,340.0,max,nan,ko,2024,5,13,16,9,Saturday
+</dataframe>
+
+
+The user asked the following question:
+### QUERY
+ Follow these steps
+1. select 100 latest rows with user_id 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1' from "df_message"
+2. look in to "message" column and summarize top 3 most relevant topic of these 100 rows
+
+You generated this python code:
+df_selected = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+messages = df_selected['message']
+vectorizer = CountVectorizer(max_features=1000, stop_words='english')
+messages_vectorized = vectorizer.fit_transform(messages)
+lda_model = LatentDirichletAllocation(n_components=3, random_state=42)
+topics = lda_model.fit_transform(messages_vectorized)
+feature_names = vectorizer.get_feature_names_out()
+topic_words = {}
+for topic_idx, topic in enumerate(lda_model.components_):
+    top_features_ind = topic.argsort()[:-10 - 1:-1]
+    top_features = [feature_names[i] for i in top_features_ind]
+    topic_words[f'Topic {topic_idx + 1}'] = top_features
+top_topics = {k: v for k, v in sorted(topic_words.items(), key=lambda item: len(item[1]), reverse=True)[:3]}
+result = {'type': 'string', 'value': f"""Top 3 most relevant topics:
+{top_topics}"""}
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 85, in execute
+    result = self.execute_code(code_to_run, code_context)
+  File "/Users/poohpoom2002/Library/Python/3.9/lib/python/site-packages/pandasai/pipelines/chat/code_execution.py", line 171, in execute_code
+    exec(code, environment)
+  File "<string>", line 1, in <module>
+NameError: name 'df_message' is not defined
+
+
+Fix the python code above and return the new python code:
+2024-06-14 15:25:05 [INFO] Executing Step 1: CodeGenerator
+2024-06-14 15:25:13 [INFO] Prompt used:
+            None
+            
+2024-06-14 15:25:13 [INFO] Code generated:
+            ```
+            import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+
+# Assuming dfs[1] contains the df_message dataframe
+df_message = dfs[1]
+
+df_selected = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+messages = df_selected['message']
+
+vectorizer = CountVectorizer(max_features=1000, stop_words='english')
+messages_vectorized = vectorizer.fit_transform(messages)
+
+lda_model = LatentDirichletAllocation(n_components=3, random_state=42)
+topics = lda_model.fit_transform(messages_vectorized)
+
+feature_names = vectorizer.get_feature_names_out()
+topic_words = {}
+
+for topic_idx, topic in enumerate(lda_model.components_):
+    top_features_ind = topic.argsort()[:-10 - 1:-1]
+    top_features = [feature_names[i] for i in top_features_ind]
+    topic_words[f'Topic {topic_idx + 1}'] = top_features
+
+top_topics = {k: v for k, v in sorted(topic_words.items(), key=lambda item: len(item[1]), reverse=True)[:3]}
+
+result = {'type': 'string', 'value': f"""Top 3 most relevant topics:
+{top_topics}"""}
+            ```
+            
+2024-06-14 15:25:13 [INFO] Executing Step 2: CodeCleaning
+2024-06-14 15:25:13 [INFO] 
+Code running:
+```
+df_message = dfs[1]
+df_selected = df_message[df_message['user_id'] == 'QzJOQkPFJcQnSiARe4mR8s3z2Ez1'].tail(100)
+messages = df_selected['message']
+vectorizer = CountVectorizer(max_features=1000, stop_words='english')
+messages_vectorized = vectorizer.fit_transform(messages)
+lda_model = LatentDirichletAllocation(n_components=3, random_state=42)
+topics = lda_model.fit_transform(messages_vectorized)
+feature_names = vectorizer.get_feature_names_out()
+topic_words = {}
+for topic_idx, topic in enumerate(lda_model.components_):
+    top_features_ind = topic.argsort()[:-10 - 1:-1]
+    top_features = [feature_names[i] for i in top_features_ind]
+    topic_words[f'Topic {topic_idx + 1}'] = top_features
+top_topics = {k: v for k, v in sorted(topic_words.items(), key=lambda item: len(item[1]), reverse=True)[:3]}
+result = {'type': 'string', 'value': f"""Top 3 most relevant topics:
+{top_topics}"""}
+        ```
+2024-06-14 15:25:14 [INFO] Executing Step 7: ResultValidation
+2024-06-14 15:25:14 [INFO] Answer: {'type': 'string', 'value': "Top 3 most relevant topics:\n{'Topic 1': ['ทดสอบนะ', 'ยง', 'ลองเส', 'มพร', 'ฟเม', 'าสต', 'ในหน', 'ลองหน', 'อยนะ', 'าน'], 'Topic 2': ['เด', 'งไว', 'ในส', 'คร', 'อย', 'ได', 'ทดสอบ', 'อนท', 'อเข', 'หญ'], 'Topic 3': ['ดไม', 'กล', 'ไม', 'กสาวให', 'แต', 'ยวเล', 'งน', 'บส', 'บของท', 'ให']}"}
+2024-06-14 15:25:14 [INFO] Executing Step 8: ResultParsing

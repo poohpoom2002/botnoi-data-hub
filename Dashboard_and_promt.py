@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+import datetime as dt
 
 @st.cache_resource
 def connectMongo() :
@@ -22,60 +23,63 @@ def connectMongo() :
     try:
         client.admin.command('ping')
         print("Pinged your deployment. You successfully connected to MongoDB!")
-        paymentdb = client['prod-tts-payment']
-
-        df_pay = pd.DataFrame(paymentdb.payment.find())
-        df_message = pd.DataFrame(paymentdb.message.find())
-
-        df_pay_droped = df_pay.drop(columns=['qrcode' ,'transactionid', 'actual_time'	,'sale_code_name'	, 'package_sub','ref1',	'action'	,'subscription',	'sub_id'])
-        df_message_droped = df_message.drop(columns=[ 'url', 'audio_id', 'page'])
-
-        df_pay_droped = df_pay_droped.astype(str)
-        df_message_droped = df_message_droped.astype(str) 
-
-        df_pay_droped['datetime'] = pd.to_datetime(df_pay_droped['datetime'])
-        df_pay_droped['price'] = df_pay_droped['price'].astype(float)
-        df_pay_droped['point'] = df_pay_droped['point'].astype(float)
-
-        df_pay_droped = df_pay_droped[(df_pay_droped.datetime > '2024-01-01 00:00:00') & (df_pay_droped.status == 'True')]
-
-        df_pay_droped['Year'] = df_pay_droped['datetime'].dt.year
-        df_pay_droped['Month'] = df_pay_droped['datetime'].dt.month
-        df_pay_droped['Week'] = df_pay_droped['datetime'].dt.isocalendar().week
-        df_pay_droped['Day'] =df_pay_droped['datetime'].dt.day
-        df_pay_droped['Hour'] = df_pay_droped['datetime'].dt.hour
-        df_pay_droped['Day_of_Week'] =df_pay_droped['datetime'].dt.day_name()
-
-        df_pay_droped['Year'] = df_pay_droped['Year'].astype('Int32')
-        df_pay_droped['Month'] = df_pay_droped['Month'].astype('Int32')
-        df_pay_droped['Week'] = df_pay_droped['Week'].astype('Int32')
-        df_pay_droped['Day'] = df_pay_droped['Day'].astype('Int32')
-        df_pay_droped['Hour'] = df_pay_droped['Hour'].astype('Int32')
-
-        df_message_droped['datetime'] = pd.to_datetime(df_message_droped['datetime'])
-        df_message_droped['count'] = df_message_droped['count'].astype(float)
-
-        df_message_droped = df_message_droped[(df_message_droped.datetime > '2024-01-01 00:00:00') & (df_message_droped.channel == 'download')]
-        df_message_droped.rename(columns={'count': 'point'}, inplace=True)
-        df_message_droped['provider'].fillna('web', inplace=True)
-
-        df_message_droped['Year'] = df_message_droped['datetime'].dt.year
-        df_message_droped['Month'] = df_message_droped['datetime'].dt.month
-        df_message_droped['Week'] = df_message_droped['datetime'].dt.isocalendar().week
-        df_message_droped['Day'] = df_message_droped['datetime'].dt.day
-        df_message_droped['Hour'] = df_message_droped['datetime'].dt.hour
-        df_message_droped['Day_of_Week'] = df_message_droped['datetime'].dt.day_name()
-
-        df_message_droped['Year'] = df_message_droped['Year'].astype('Int32')
-        df_message_droped['Month'] = df_message_droped['Month'].astype('Int32')
-        df_message_droped['Week'] = df_message_droped['Week'].astype('Int32')
-        df_message_droped['Day'] = df_message_droped['Day'].astype('Int32')
-        df_message_droped['Hour'] = df_message_droped['Hour'].astype('Int32')
-
-        return [df_pay_droped.astype(str), df_message_droped.astype(str)]
-    
     except Exception as e:
         print(e)
+
+    paymentdb = client['prod-tts-payment']
+
+    df_pay = pd.DataFrame(paymentdb.payment.find())
+    df_message = pd.DataFrame(paymentdb.message.find())
+
+    df_pay_droped = df_pay.drop(columns=['qrcode' ,'transactionid', 'actual_time'	,'sale_code_name'	, 'package_sub','ref1',	'action'	,'subscription',	'sub_id', 'promotion'])
+    df_message_droped = df_message.drop(columns=[ 'url', 'audio_id', 'page'])
+
+    df_pay_droped = df_pay_droped[(df_pay_droped.datetime > '2024-01-01 00:00:00') & (df_pay_droped.status == True)]
+    df_message_droped = df_message_droped[(df_message_droped.datetime > '2024-01-01 00:00:00') & (df_message_droped.channel == 'download')]
+
+    df_pay_droped = df_pay_droped.astype(str)
+    df_message_droped = df_message_droped.astype(str) 
+
+    df_pay_droped['datetime'] = pd.to_datetime(df_pay_droped['datetime'])
+    df_pay_droped['price'] = df_pay_droped['price'].astype(float)
+    df_pay_droped['point'] = df_pay_droped['point'].astype(float)
+
+    df_pay_droped['datetime'] = pd.to_datetime(df_pay_droped['datetime'], errors='coerce')
+    df_message_droped['datetime'] = pd.to_datetime(df_message_droped['datetime'], errors='coerce')
+
+    df_pay_droped['Year'] = df_pay_droped['datetime'].dt.year
+    df_pay_droped['Month'] = df_pay_droped['datetime'].dt.month
+    df_pay_droped['Week'] = df_pay_droped['datetime'].dt.isocalendar().week
+    df_pay_droped['Day'] =df_pay_droped['datetime'].dt.day
+    df_pay_droped['Hour'] = df_pay_droped['datetime'].dt.hour
+    df_pay_droped['Day_of_Week'] =df_pay_droped['datetime'].dt.day_name()
+
+    df_pay_droped['Year'] = df_pay_droped['Year'].astype('Int32')
+    df_pay_droped['Month'] = df_pay_droped['Month'].astype('Int32')
+    df_pay_droped['Week'] = df_pay_droped['Week'].astype('Int32')
+    df_pay_droped['Day'] = df_pay_droped['Day'].astype('Int32')
+    df_pay_droped['Hour'] = df_pay_droped['Hour'].astype('Int32')
+
+    df_message_droped['datetime'] = pd.to_datetime(df_message_droped['datetime'])
+    df_message_droped['count'] = df_message_droped['count'].astype(float)
+
+    df_message_droped.rename(columns={'count': 'point'}, inplace=True)
+    df_message_droped['provider'].fillna('web', inplace=True)
+
+    df_message_droped['Year'] = df_message_droped['datetime'].dt.year
+    df_message_droped['Month'] = df_message_droped['datetime'].dt.month
+    df_message_droped['Week'] = df_message_droped['datetime'].dt.isocalendar().week
+    df_message_droped['Day'] = df_message_droped['datetime'].dt.day
+    df_message_droped['Hour'] = df_message_droped['datetime'].dt.hour
+    df_message_droped['Day_of_Week'] = df_message_droped['datetime'].dt.day_name()
+
+    df_message_droped['Year'] = df_message_droped['Year'].astype('Int32')
+    df_message_droped['Month'] = df_message_droped['Month'].astype('Int32')
+    df_message_droped['Week'] = df_message_droped['Week'].astype('Int32')
+    df_message_droped['Day'] = df_message_droped['Day'].astype('Int32')
+    df_message_droped['Hour'] = df_message_droped['Hour'].astype('Int32')
+    
+    return [df_pay_droped, df_message_droped]
 
 def connectOpenAI() :
     os.environ["PANDASAI_API_KEY"] = "$2a$10$vdsfzU0rvW1vs8v1G/aMjebe.k5HuuOi3tftrf0E7c.XWH9wknn4a"
@@ -151,23 +155,23 @@ def plot_revenue_trend(df, period):
         df_month['day'] = df_month['datetime'].dt.day
         daily_income = df_month.groupby('day')['price'].sum().reset_index()
         fig = px.line(daily_income, x='day', y='price', markers=True, title='Daily Income Over Time', labels={'day': 'Date', 'price': 'Income'})
-        fig.update_traces(text=daily_income['price'], textposition='top center', line_color = "#1474cd")
-        fig.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            xaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-                title=dict(font=dict(color='black'))
-            ), 
-            yaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-            ),
-            margin=dict(l=40, r=40, t=40, b=40)
-        )
+        fig.update_traces(text=daily_income['price'], textposition='top center')
+        # fig.update_layout(
+        #     plot_bgcolor='white',
+        #     paper_bgcolor='white',
+        #     xaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #         title=dict(font=dict(color='black'))
+        #     ), 
+        #     yaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #     ),
+        #     margin=dict(l=40, r=40, t=40, b=40)
+        # )
                           
-    elif period == 'Today Income' :
+    elif period == 'Yesterday Income' :
         current_datetime = pd.Timestamp.now()
         daily_date = current_datetime.strftime("%Y-%m-%d")
         current_day = pd.to_datetime(daily_date)
@@ -176,24 +180,24 @@ def plot_revenue_trend(df, period):
         df_today['hour'] = df_today['datetime'].dt.hour
         hourly_income = df_today.groupby('hour')['price'].sum().reset_index()
         fig = px.line(hourly_income, x='hour', y='price', markers=True, title=f'Hourly Income for {(current_day - pd.Timedelta(days=1)).date()}', labels={'hour': 'Hour of the Day', 'price': 'Income'})
-        fig.update_traces(text=hourly_income['price'], textposition='top center', line_color = "#1474cd")
-        fig.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            xaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-                title=dict(font=dict(color='black'))
-            ),
-            yaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-                title=dict(font=dict(color='black'))
-            ),
-            margin=dict(l=40, r=40, t=40, b=40)
-        )
+        fig.update_traces(text=hourly_income['price'], textposition='top center')
+        # fig.update_layout(
+        #     plot_bgcolor='white',
+        #     paper_bgcolor='white',
+        #     xaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #         title=dict(font=dict(color='black'))
+        #     ),
+        #     yaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #         title=dict(font=dict(color='black'))
+        #     ),
+        #     margin=dict(l=40, r=40, t=40, b=40)
+        # )
         
-    elif period == 'Yesterday Income' :
+    elif period == 'Today Income' :
         current_datetime = pd.Timestamp.now()
         daily_date = current_datetime.strftime("%Y-%m-%d")
         current_day = pd.to_datetime(daily_date)
@@ -202,22 +206,22 @@ def plot_revenue_trend(df, period):
         df_today['hour'] = df_today['datetime'].dt.hour
         hourly_income = df_today.groupby('hour')['price'].sum().reset_index()
         fig = px.line(hourly_income, x='hour', y='price', markers=True, title=f'Hourly Income for {(current_day).date()}', labels={'hour': 'Hour of the Day', 'price': 'Income'})
-        fig.update_traces(text=hourly_income['price'], textposition='top center', line_color = "#1474cd")
-        fig.update_layout(
-            plot_bgcolor='white',
-            paper_bgcolor='white',
-            xaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-                title=dict(font=dict(color='black'))
-            ),
-            yaxis=dict(
-                showgrid=True,
-                gridcolor='rgba(200, 200, 200, 0.5)',
-                title=dict(font=dict(color='black'))
-            ),
-            margin=dict(l=40, r=40, t=40, b=40)
-        )
+        fig.update_traces(text=hourly_income['price'], textposition='top center')
+        # fig.update_layout(
+        #     plot_bgcolor='white',
+        #     paper_bgcolor='white',
+        #     xaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #         title=dict(font=dict(color='black'))
+        #     ),
+        #     yaxis=dict(
+        #         showgrid=True,
+        #         gridcolor='rgba(200, 200, 200, 0.5)',
+        #         title=dict(font=dict(color='black'))
+        #     ),
+        #     margin=dict(l=40, r=40, t=40, b=40)
+        # )
 
     return fig
 
@@ -378,7 +382,7 @@ def feature_eng(df_pay,df_msg) :
 
     sum_transac = true_transac.groupby('user_id')['price'].sum().reset_index().rename(columns={'price': 'sum_price'})
     msg_count = pd.DataFrame(df_msg[df_msg['datetime'] >= datetime_Jan_24]['user_id'].value_counts()).astype(int)
-    msg_count.drop('guest', inplace = True)
+    # msg_count.drop('guest', inplace = True)
 
     merged_df = pd.merge(sum_transac, msg_count,  on='user_id', how='left')
     merged_df.fillna(0, inplace=True)
@@ -443,6 +447,53 @@ def cdp_searcher(cdp, user_id) :
     cdp = quartile_cdp(cdp)
     cluster = cdp[cdp['user_id'] == user_id]['Cluster']
     return cluster
+
+def ShowTop10User(period, df):
+  # Get current date
+  now = dt.datetime.now()
+  current_year = now.year
+  current_month = now.month
+  current_day = now.day
+  current_week = now.isocalendar()[1]  # ISO week number
+  current_quarter = (current_month - 1) // 3 + 1
+
+  # Filter DataFrame based on the period
+  if period == 'Year':
+      df = df[df['Year'] == current_year]
+      group_cols = ['Year', 'user_id']
+  elif period == 'Quarter':
+      df['Quarter'] = (df['Month'] - 1) // 3 + 1
+      df = df[(df['Year'] == current_year) & (df['Quarter'] == current_quarter)]
+      group_cols = ['Year', 'Quarter', 'user_id']
+  elif period == 'Month':
+      df = df[(df['Year'] == current_year) & (df['Month'] == current_month)]
+      group_cols = ['Year', 'Month', 'user_id']
+  elif period == 'Week':
+      df = df[(df['Year'] == current_year) & (df['Week'] == current_week)]
+      group_cols = ['Year', 'Week', 'user_id']
+  elif period == 'Day':
+      df = df[(df['Year'] == current_year) & (df['Month'] == current_month) & (df['Day'] == current_day)]
+      group_cols = ['Year', 'Month', 'Day', 'user_id']
+  else:
+      raise ValueError("Invalid period. Choose from 'Year', 'Quarter', 'Month', 'Week', 'Day'.")
+
+  # Debugging: Print intermediate DataFrame to check filtering
+  # print("Filtered DataFrame for period:", period)
+  # print(df)
+
+  # Group by the defined columns and sum the prices
+  grouped_df = df.groupby(group_cols)['price'].sum().reset_index()
+
+  # Debugging: Print grouped DataFrame to check aggregation
+  # print("Grouped DataFrame:\n", grouped_df)
+
+  # Get the top ten users for each time period
+  top_users = grouped_df.groupby(group_cols[:-1]).apply(lambda x: x.nlargest(10, 'price')).reset_index(drop=True)
+
+  # Debugging: Print final top users DataFrame
+  # print("Top Users DataFrame:\n", top_users)
+
+  return top_users
   
 connectOpenAI()
 df = connectMongo()
@@ -549,34 +600,12 @@ st.write("Transforms your data into interactive visualizations, allowing you to 
 time_selectbox = st.selectbox( "select time dimension" ,
     ("Quarter","Month", "Week", "Daily income for this year", "Daily income for this month", "Today Income", "Yesterday Income")
 )
-
-if  time_selectbox == "Quarter":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Quarter")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Month":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Month")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Week":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Week")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Daily income for this year":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Daily income for this year")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Daily income for this month":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Daily income for this month")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Today Income":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Today Income")
-    st.plotly_chart(lineChart_fig)
-elif time_selectbox == "Yesterday Income":
-    lineChart_fig = plot_revenue_trend(df_pay ,"Yesterday Income")
-    st.plotly_chart(lineChart_fig)
+lineChart_fig = plot_revenue_trend(df_pay ,time_selectbox)
+st.plotly_chart(lineChart_fig)
 
 st.markdown("<h1 class='Top_title'>Heatmap</h1>", unsafe_allow_html=True)
+st.write("The Heatmap function in our Botnoi Data Hub provides a powerful visualization tool that helps you understand the distribution and intensity of data points across the year!")
 df_lake = to_smartDataLake(df_pay  , df_message)
-
-# UI
-st.title("Test show Graphs")
 
 #import data form mongoDB test checked !
 #st.dataframe(df_pay.head(10))
@@ -587,34 +616,44 @@ heatmap_fig = create_heatmap(df_pay, 2024)
 st.plotly_chart(heatmap_fig)
 
 st.markdown("<h1 class='Top_title'>Visualize User Data</h1>", unsafe_allow_html=True)
+st.write("Botnoi Data Hub offers Data Visualization feature designed to help you make sense of your user-related data through intuitive and interactive graphics.")
 chart_selectbox = st.selectbox( "Select visualization you interested in" ,
     ("Transaction", "Packages_Bought", "Point_Usage")
 )
 visualization_user_id = st.text_area("Enter user id")
+if st.button("Generate Chart"):
+    if  chart_selectbox == "Transaction":
+        transaction_chart = VisualizeTransaction(visualization_user_id ,df_pay)
+        st.plotly_chart(transaction_chart)
+    elif  chart_selectbox == "Packages_Bought":
+        package_bought_chart = ShowBoughtPack(visualization_user_id ,df_pay)
+        st.plotly_chart(package_bought_chart)
+    elif  chart_selectbox == "Point_Usage":
+        point_usage_chart = VisualizePointUsage(visualization_user_id ,df_pay)
+        st.plotly_chart(point_usage_chart)
 
-if  chart_selectbox == "Transaction":
-    transaction_chart = VisualizeTransaction(visualization_user_id ,df_pay)
-    st.plotly_chart(transaction_chart)
-elif  chart_selectbox == "Packages_Bought":
-    package_bought_chart = ShowBoughtPack(visualization_user_id ,df_pay)
-    st.plotly_chart(package_bought_chart)
-elif  chart_selectbox == "Point_Usage":
-    point_usage_chart = VisualizePointUsage(visualization_user_id ,df_pay)
-    st.plotly_chart(point_usage_chart)
+st.markdown("<h1 class='Top_title'>Top 10 Users</h1>", unsafe_allow_html=True)
+st.write("The Top 10 Users feature in Botnoi Data Hub provides a focused and insightful view of your most active or valuable users. This feature is designed to help you quickly identify and analyze the key contributors to your platform's success.")
+top_selectbox = st.selectbox( "Select time frame" ,
+    ("Quarter", "Year", "Month", "Week", "Day")
+)
+top = ShowTop10User(top_selectbox, df_pay)
+st.write(top)
 
 st.markdown("<h1 class='Top_title'>User Clustering</h1>", unsafe_allow_html=True)
+st.write("The User Clustering feature leverages machine learning algorithms to group users into distinct clusters based on their behaviors, preferences, and other attributes.")
 
 user_id = st.text_area("Enter ID")
-cdp = feature_eng(df_pay, df_message)
-cluster = cdp_searcher(cdp, user_id)
-st.write(cluster)
-
-prompt = st.text_area("Enter your prompt")
+if st.button("Generate Clustering"):
+    cdp = feature_eng(df_pay, df_message)
+    cluster = cdp_searcher(cdp, user_id)
+    st.write(cluster)
 
 st.markdown("<h1 class='Top_title'>Let’s explore Insights with PandasAI</h1>", unsafe_allow_html=True)
 st.write("PandasAI is an advanced tool that integrates artificial intelligence capabilities with the Pandas library, enabling users to analyze data more efficiently. Users can prompt in natural language to analyze data directly !")
 st.markdown("<h5 style='font-weight: bold;'>Enter your prompt</h5>",unsafe_allow_html=True)
 
+prompt = st.text_area("Enter your prompt")
 if st.button("Generate"):
     if prompt:
         last_graph = calculate_file_hash('./exports/charts/temp_chart.png')
