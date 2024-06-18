@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-from streamlit_option_menu import option_menu
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import pandas as pd
