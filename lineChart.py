@@ -118,7 +118,7 @@ def plot_revenue_trend(df, period):
         fig = px.line(daily_income, x='day', y='price', markers=True, title='Daily Income Over Time', labels={'day': 'Date', 'price': 'Income'})
         fig.update_traces(text=daily_income['price'], textposition='top center', line_color = "#1474cd")
         fig.update_layout(plot_bgcolor='white',paper_bgcolor='white', xaxis=dict(showgrid=True, gridcolor='rgba(200, 200, 200, 0.5)', title=dict(font=dict(color='black'))), 
-                          yaxis=dict(showgrid=True,gridcolor='rgba(200, 200, 200, 0.5)', margin=dict(l=40, r=40, t=40, b=40))
+                          yaxis=dict(showgrid=True,gridcolor='rgba(200, 200, 200, 0.5)', margin=dict(l=40, r=40, t=40, b=40)))
                           
     elif period == 'Today Income' :
         current_datetime = pd.Timestamp.now()
