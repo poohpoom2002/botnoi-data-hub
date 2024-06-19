@@ -12,6 +12,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import datetime as dt
+import psutil
 
 @st.cache_resource
 def connectMongo() :
@@ -27,8 +28,31 @@ def connectMongo() :
 
     paymentdb = client['prod-tts-payment']
 
-    df_pay = pd.DataFrame(paymentdb.payment.find())
-    df_message = pd.DataFrame(paymentdb.message.find())
+    # Use a generator function to read data from MongoDB in smaller chunks
+    def read_data_from_mongo(collection_name):
+        collection = paymentdb[collection_name]
+        cursor = collection.find()
+        for doc in cursor:
+            yield doc
+
+    # Use the generator function to process data
+    payment_generator = read_data_from_mongo('payment')
+    message_generator = read_data_from_mongo('message')
+
+    # Process data in smaller chunks
+    payment_data = []
+    message_data = []
+    for payment_doc in payment_generator:
+        # Process payment document
+        payment_data.append(payment_doc)
+
+    for message_doc in message_generator:
+        # Process message document
+        message_data.append(message_doc)
+
+    # Convert data to pandas DataFrame
+    df_pay = pd.DataFrame(payment_data)
+    df_message = pd.DataFrame(message_data)
 
     df_pay_droped = df_pay.drop(columns=['qrcode' ,'transactionid', 'actual_time'	,'sale_code_name'	, 'package_sub','ref1',	'action'	,'subscription',	'sub_id', 'promotion'])
     df_message_droped = df_message.drop(columns=[ 'url', 'audio_id', 'page'])
@@ -499,6 +523,17 @@ df = connectMongo()
 df_pay = df[0]
 df_message = df[1]
 df_lake = to_smartDataLake(df_pay  , df_message)
+
+# Get the current process
+current_process = psutil.Process()
+
+# Track CPU usage
+cpu_usage = current_process.cpu_percent()
+print(f"CPU Usage: {cpu_usage}%")
+
+# Track memory usage
+memory_usage = current_process.memory_info().rss / (1024 ** 2)  # Convert to MB
+print(f"Memory Usage: {memory_usage:.2f} MB")
 
 sidebar_style = """
     <style>
