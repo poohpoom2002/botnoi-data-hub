@@ -7510,3 +7510,116 @@ result = {'type': 'string', 'value': f"""Top 3 most relevant topics:
 2024-06-14 15:25:14 [INFO] Answer: {'type': 'string', 'value': "Top 3 most relevant topics:\n{'Topic 1': ['ทดสอบนะ', 'ยง', 'ลองเส', 'มพร', 'ฟเม', 'าสต', 'ในหน', 'ลองหน', 'อยนะ', 'าน'], 'Topic 2': ['เด', 'งไว', 'ในส', 'คร', 'อย', 'ได', 'ทดสอบ', 'อนท', 'อเข', 'หญ'], 'Topic 3': ['ดไม', 'กล', 'ไม', 'กสาวให', 'แต', 'ยวเล', 'งน', 'บส', 'บของท', 'ให']}"}
 2024-06-14 15:25:14 [INFO] Executing Step 8: ResultParsing
 2024-06-19 13:58:31 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 667281971f81e1c786b1ce24, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "667281971f81e1c786b1ce24"}, "remainingTimeMS": 29}
+2024-06-20 16:35:05 [INFO] Question: Give me data for this user "U809bd88b06884a99a0269fe2d95190ba"
+2024-06-20 16:35:05 [INFO] Running PandasAI with bamboo_llm LLM...
+2024-06-20 16:35:05 [INFO] Prompt ID: bf737cb1-151c-4b38-8dd5-547cbe25006a
+2024-06-20 16:35:05 [INFO] Executing Pipeline: GenerateChatPipeline
+2024-06-20 16:36:22 [INFO] Executing Step 0: ValidatePipelineInput
+2024-06-20 16:36:22 [INFO] Executing Step 1: CacheLookup
+2024-06-20 16:36:23 [INFO] Executing Step 2: PromptGeneration
+2024-06-20 16:36:26 [INFO] Querying without using training data.
+2024-06-20 16:36:28 [INFO] Querying without using training docs.
+2024-06-20 16:36:28 [INFO] Using prompt: <dataframe>
+dfs[0]:15222x19
+_id,user_id,package_id,price,datetime,status,point,Year,Month,Week,Day,Hour,Day_of_Week,quarter,quarter_label,Quarter,month_name,month_num,date_label
+659903ad33cb792ec5154896,7IjKUGUHdhaa4t065rJaF3TtLsq1,pack_5000,180.0,2024-04-29 14:21:56,True,360.0,2024,3,10,14,15,Friday,2024Q1,Quarter 1 2024,2,Jun 2024,2024-04,2024-01-14
+65c3caae60de63e98e2233aa,5QfSSAN7tBaLbnGXZZkwFPHY9N92,pack_13500,400.0,2024-03-16 23:52:14,True,1960.0,2024,5,2,22,0,Wednesday,2024Q1,Quarter 2 2024,1,Feb 2024,2024-02,2024-01-04
+65ed670d441a13b3cb8753d3,JPCesUROjPdI14lf4ygyfzEpLBY2,pack_599,609.0,2024-01-09 14:30:43,True,3160.0,2024,4,20,11,10,Thursday,2024Q2,Quarter 2 2024,2,Jan 2024,2024-03,2024-04-08
+</dataframe>
+<dataframe>
+dfs[1]:620134x15
+_id,user_id,message,datetime,channel,point,speaker,provider,language,Year,Month,Week,Day,Hour,Day_of_Week
+664cb1ff1dfe022861d520af,WCfXprWKi4RDkCQIZM6HruHLOyt1,สวัสดีค่ะวันนี้มีเครื่องปั่นบดไฟฟ้าสุดพิเศษมานำเสนอเครื่องนี้จะมาช่วยให้การทำอาหารในครัวเป็นเรื่องง่ายและสะดวกสบายมากขึ้นพิเศษสุดๆในงานเทศกาลแห่งความคุ้มค่า6.6เรามีเครื่องปั่นบดไฟฟ้าคุณภาพดีราคาเพียง69บาทเท่านั้นจากราคาปกติ199บาทประหยัดไปกว่าครึ่งคุ้มสุดคุ้มโอกาสดีๆแบบนี้ห้ามพลาดเด็ดขาดเครื่องปั่นบดไร้สายตัวนี้มาพร้อมความทนทานใบมีดสแตนเลสคุณภาพสูงคมกริบไม่มีสนิมให้การบดปั่นได้ละเอียดนุ่มทุกครั้งสามารถปั่นได้ทั้งกระเทียมพริกเนื้อสัตว์ผลไม้ผักและส่วนผสมต่างๆอีกมากมายความจุถึง250mlทำงานได้อย่างรวดเร็วประหยัดแรงและเวลาเหมาะสำหรับคนที่ชอบทำอาหารอร่อยๆหรืองานปาร์ตี้สังสรรค์กับเพื่อนฝูงพกพาสะดวกด้วยขนาดกะทัดรัดและแบตเตอรี่อึดทนทานกว่าใครแถมยังมีบริการส่งฟรีทั่วประเทศและสามารถเลือกจ่ายเงินเมื่อได้รับสินค้าได้อีกด้วยเรียกได้ว่าคุ้มค่าและสะดวกสบายที่สุดแล้วสำหรับราคา69บาทในวันนี้คุณจะได้ของดีไปใช้นานๆเลยนะคะไม่ต้องลังเลอีกต่อไปสั่งซื้อเครื่องปั่นบดไฟฟ้าตัวคุ้มนี้กันได้เลยราคาดีและคุณสมบัติเยี่ยมแบบนี้หากพลาดไปคงต้องเสียดายนานเลยทีเดียวช้ารอไม่ได้แล้วค่ะรีบสั่งด่วน!,2024-02-21 11:02:09.894352,download,568.0,rungthida,canva,th,2024,6,15,31,17,Monday
+65fda4a8a6a1f1e78eb8c840,r2CBkfv4gxcE0GlEn9nFem0NEMF2,งั้นโอเคเลยครับเดี๋ยวผมส่งเบอกับไลน์มันให้นะครับ,2024-06-11 14:17:48.447082,download,139.0,lo_menubandasack,nan,ar,2024,2,20,16,19,Tuesday
+65e59f95fb1a86b6ae4c4188,U64eea648b047d41591572e8ce74f6515,ใครรักรถต้องมีสิ่งนี้เลยแผ่นกันรอยชายบันไดรถยนต์ติดตั้งง่ายทำได้ด้วยตัวเองกันน้ำกันรอยขีดข่วนเช็ดออกง่ายลอกออกไม่เป็นคราบติดแล้วรถดูเท่ขึ้นพิเศษเฉพาะคนที่เห็นคลิปนี้เท่านั้นเอาไปเลย4แผ่นเพียง100บาท,2024-03-01 11:27:55.000000,download,95.0,guy_thairath,nan,vi,2024,3,17,11,21,Sunday
+</dataframe>
+
+
+
+
+Update this initial code:
+```python
+# TODO: import the required dependencies
+import pandas as pd
+
+# Write code here
+
+# Declare result var: 
+type (possible values "string", "number", "dataframe", "plot"). Examples: { "type": "string", "value": f"The highest salary is {highest_salary}." } or { "type": "number", "value": 125 } or { "type": "dataframe", "value": pd.DataFrame({...}) } or { "type": "plot", "value": "temp_chart.png" }
+
+```
+
+
+
+
+
+
+
+### QUERY
+ Give me data for this user "U809bd88b06884a99a0269fe2d95190ba"
+
+Variable `dfs: list[pd.DataFrame]` is already declared.
+
+At the end, declare "result" variable as a dictionary of type and value.
+
+If you are asked to plot a chart, use "matplotlib" for charts, save as png.
+
+
+Generate python code and return full updated code:
+2024-06-20 16:36:28 [INFO] Executing Step 3: CodeGenerator
+2024-06-20 16:36:36 [INFO] Prompt used:
+            None
+            
+2024-06-20 16:36:36 [INFO] Code generated:
+            ```
+            # TODO: import the required dependencies
+import pandas as pd
+
+# Data for user "U809bd88b06884a99a0269fe2d95190ba"
+data = [
+    {
+        "_id": "65ed670d441a13b3cb8753d3",
+        "user_id": "JPCesUROjPdI14lf4ygyfzEpLBY2",
+        "package_id": "pack_599",
+        "price": 609,
+        "datetime": "2024-01-09T14:30:43.000",
+        "status": True,
+        "point": 3160,
+        "Year": 2024,
+        "Month": 4,
+        "Week": 20,
+        "Day": 11,
+        "Hour": 10,
+        "Day_of_Week": 10,
+        "quarter_label": "Quarter 2 2024",
+        "Quarter": 2,
+        "month_name": "Jan 2024",
+        "month_num": 2,
+        "date_label": "2024-04-08"
+    }
+]
+
+# Create a DataFrame
+df_user_U809bd88b06884a99a0269fe2d95190ba = pd.DataFrame(data)
+
+# Declare result variable
+result = {"type": "dataframe", "value": df_user_U809bd88b06884a99a0269fe2d95190ba}
+            ```
+            
+2024-06-20 16:36:36 [INFO] Executing Step 4: CachePopulation
+2024-06-20 16:36:36 [INFO] Executing Step 5: CodeCleaning
+2024-06-20 16:40:55 [INFO] 
+Code running:
+```
+data = [{'_id': '65ed670d441a13b3cb8753d3', 'user_id': 'JPCesUROjPdI14lf4ygyfzEpLBY2', 'package_id': 'pack_599', 'price': 609, 'datetime': '2024-01-09T14:30:43.000', 'status': True, 'point': 3160, 'Year': 2024, 'Month': 4, 'Week': 20, 'Day': 11, 'Hour': 10, 'Day_of_Week': 10, 'quarter_label': 'Quarter 2 2024', 'Quarter': 2, 'month_name': 'Jan 2024', 'month_num': 2, 'date_label': '2024-04-08'}]
+df_user_U809bd88b06884a99a0269fe2d95190ba = pd.DataFrame(data)
+result = {'type': 'dataframe', 'value': df_user_U809bd88b06884a99a0269fe2d95190ba}
+        ```
+2024-06-20 16:40:55 [INFO] Executing Step 6: CodeExecution
+2024-06-20 16:40:55 [INFO] Executing Step 7: ResultValidation
+2024-06-20 16:40:55 [INFO] Answer: {'type': 'dataframe', 'value':                         _id                       user_id package_id  price  ... Quarter  month_name  month_num  date_label
+0  65ed670d441a13b3cb8753d3  JPCesUROjPdI14lf4ygyfzEpLBY2   pack_599    609  ...       2    Jan 2024          2  2024-04-08
+
+[1 rows x 18 columns]}
+2024-06-20 16:40:55 [INFO] Executing Step 8: ResultParsing
+2024-06-27 18:13:05 [INFO] {"message": "Waiting for suitable server to become available", "selector": "Primary()", "operation": "ping", "topologyDescription": "<TopologyDescription id: 667d49410a11543376867c2c, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('botnoivoiceprod-shard-00-00.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-01.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-02.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>, <ServerDescription ('botnoivoiceprod-shard-00-03.f4igi.mongodb.net', 27017) server_type: Unknown, rtt: None>]>", "clientId": {"$oid": "667d49410a11543376867c2c"}, "remainingTimeMS": 29}

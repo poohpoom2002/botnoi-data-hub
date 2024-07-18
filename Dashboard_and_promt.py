@@ -3,7 +3,7 @@ import streamlit as st
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import pandas as pd
-from pandasai import SmartDataframe, SmartDatalake
+from pandasai import SmartDatalake
 import cv2
 import hashlib
 import plotly.express as px
@@ -517,7 +517,7 @@ def ShowTop10User(period, df):
   # print("Top Users DataFrame:\n", top_users)
 
   return top_users
-  
+
 connectOpenAI()
 df = connectMongo()
 df_pay = df[0]
